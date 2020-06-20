@@ -5,9 +5,9 @@
   
   <link href="/MyBlog/atom.xml" rel="self"/>
   
-  <link href="/"/>
+  <link href="/MyBlog/"/>
   <updated>2020-06-01T02:11:11.296Z</updated>
-  <id>/</id>
+  <id>/MyBlog/</id>
   
   <author>
     <name>Uncle_drew</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>J - Factorial Products UCF Local Programming Contest 2014</title>
-    <link href="/2020/06/01/UCF2014/"/>
-    <id>/2020/06/01/UCF2014/</id>
+    <link href="/MyBlog/2020/06/01/UCF2014/"/>
+    <id>/MyBlog/2020/06/01/UCF2014/</id>
     <published>2020-06-01T01:55:46.000Z</published>
     <updated>2020-06-01T02:11:11.296Z</updated>
     
@@ -31,17 +31,17 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="/MyBlog/categories/Algorithm/"/>
     
     
-      <category term="数学" scheme="/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数学" scheme="/MyBlog/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>基于我的视线，谈谈我对现在网络环境的一些看法</title>
-    <link href="/2020/05/17/licenses/"/>
-    <id>/2020/05/17/licenses/</id>
+    <link href="/MyBlog/2020/05/17/licenses/"/>
+    <id>/MyBlog/2020/05/17/licenses/</id>
     <published>2020-05-17T11:41:34.000Z</published>
     <updated>2020-05-17T13:02:38.812Z</updated>
     
@@ -53,19 +53,19 @@
     
     </summary>
     
-      <category term="Life" scheme="/categories/Life/"/>
+      <category term="Life" scheme="/MyBlog/categories/Life/"/>
     
     
-      <category term="lisense" scheme="/tags/lisense/"/>
+      <category term="lisense" scheme="/MyBlog/tags/lisense/"/>
     
-      <category term="blog" scheme="/tags/blog/"/>
+      <category term="blog" scheme="/MyBlog/tags/blog/"/>
     
   </entry>
   
   <entry>
     <title>团结就是力量</title>
-    <link href="/2020/05/14/nowcoder14411/"/>
-    <id>/2020/05/14/nowcoder14411/</id>
+    <link href="/MyBlog/2020/05/14/nowcoder14411/"/>
+    <id>/MyBlog/2020/05/14/nowcoder14411/</id>
     <published>2020-05-14T09:40:07.000Z</published>
     <updated>2020-05-14T10:07:23.942Z</updated>
     
@@ -77,19 +77,19 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="/MyBlog/categories/Algorithm/"/>
     
     
-      <category term="nowcoder" scheme="/tags/nowcoder/"/>
+      <category term="nowcoder" scheme="/MyBlog/tags/nowcoder/"/>
     
-      <category term="tarjan" scheme="/tags/tarjan/"/>
+      <category term="tarjan" scheme="/MyBlog/tags/tarjan/"/>
     
   </entry>
   
   <entry>
     <title>Picgo上传到GitHub莫名其妙的出错后，我选择自己实现上传功能</title>
-    <link href="/2020/05/14/88picgo/"/>
-    <id>/2020/05/14/88picgo/</id>
+    <link href="/MyBlog/2020/05/14/88picgo/"/>
+    <id>/MyBlog/2020/05/14/88picgo/</id>
     <published>2020-05-14T02:42:48.000Z</published>
     <updated>2020-05-14T03:35:05.397Z</updated>
     
@@ -101,23 +101,23 @@
     
     </summary>
     
-      <category term="Tutorial" scheme="/categories/Tutorial/"/>
+      <category term="Tutorial" scheme="/MyBlog/categories/Tutorial/"/>
     
     
-      <category term="Github" scheme="/tags/Github/"/>
+      <category term="Github" scheme="/MyBlog/tags/Github/"/>
     
-      <category term="图床" scheme="/tags/%E5%9B%BE%E5%BA%8A/"/>
+      <category term="图床" scheme="/MyBlog/tags/%E5%9B%BE%E5%BA%8A/"/>
     
-      <category term="JavaScript" scheme="/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="/MyBlog/tags/JavaScript/"/>
     
-      <category term="Html" scheme="/tags/Html/"/>
+      <category term="Html" scheme="/MyBlog/tags/Html/"/>
     
   </entry>
   
   <entry>
     <title>COVID-19与我</title>
-    <link href="/2020/05/14/COVID-19/"/>
-    <id>/2020/05/14/COVID-19/</id>
+    <link href="/MyBlog/2020/05/14/COVID-19/"/>
+    <id>/MyBlog/2020/05/14/COVID-19/</id>
     <published>2020-05-13T23:56:03.000Z</published>
     <updated>2020-05-14T00:23:02.951Z</updated>
     
@@ -129,19 +129,19 @@
     
     </summary>
     
-      <category term="Life" scheme="/categories/Life/"/>
+      <category term="Life" scheme="/MyBlog/categories/Life/"/>
     
     
-      <category term="Life" scheme="/tags/Life/"/>
+      <category term="Life" scheme="/MyBlog/tags/Life/"/>
     
-      <category term="COVID-19" scheme="/tags/COVID-19/"/>
+      <category term="COVID-19" scheme="/MyBlog/tags/COVID-19/"/>
     
   </entry>
   
   <entry>
     <title>Hexo添加可实时发布的说说界面 | Artitalk.js</title>
-    <link href="/2020/05/11/artitalk/"/>
-    <id>/2020/05/11/artitalk/</id>
+    <link href="/MyBlog/2020/05/11/artitalk/"/>
+    <id>/MyBlog/2020/05/11/artitalk/</id>
     <published>2020-05-11T01:45:23.000Z</published>
     <updated>2020-05-11T02:10:51.457Z</updated>
     
@@ -153,21 +153,21 @@
     
     </summary>
     
-      <category term="Life" scheme="/categories/Life/"/>
+      <category term="Life" scheme="/MyBlog/categories/Life/"/>
     
     
-      <category term="html" scheme="/tags/html/"/>
+      <category term="html" scheme="/MyBlog/tags/html/"/>
     
-      <category term="javascript" scheme="/tags/javascript/"/>
+      <category term="javascript" scheme="/MyBlog/tags/javascript/"/>
     
-      <category term="Hexo" scheme="/tags/Hexo/"/>
+      <category term="Hexo" scheme="/MyBlog/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>一步步带你通过Ajax+Github提供的api 实现前端剪切板图片上传</title>
-    <link href="/2020/05/08/artiimg/"/>
-    <id>/2020/05/08/artiimg/</id>
+    <link href="/MyBlog/2020/05/08/artiimg/"/>
+    <id>/MyBlog/2020/05/08/artiimg/</id>
     <published>2020-05-08T10:33:33.000Z</published>
     <updated>2020-05-08T11:32:24.211Z</updated>
     
@@ -179,23 +179,23 @@
     
     </summary>
     
-      <category term="Tutorial" scheme="/categories/Tutorial/"/>
+      <category term="Tutorial" scheme="/MyBlog/categories/Tutorial/"/>
     
     
-      <category term="Github" scheme="/tags/Github/"/>
+      <category term="Github" scheme="/MyBlog/tags/Github/"/>
     
-      <category term="javascript" scheme="/tags/javascript/"/>
+      <category term="web" scheme="/MyBlog/tags/web/"/>
     
-      <category term="web" scheme="/tags/web/"/>
+      <category term="javascript" scheme="/MyBlog/tags/javascript/"/>
     
-      <category term="ajax" scheme="/tags/ajax/"/>
+      <category term="ajax" scheme="/MyBlog/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title>Javascript+Ajax+SMMS 实现前端剪切板图片上传</title>
-    <link href="/2020/05/07/imgupload/"/>
-    <id>/2020/05/07/imgupload/</id>
+    <link href="/MyBlog/2020/05/07/imgupload/"/>
+    <id>/MyBlog/2020/05/07/imgupload/</id>
     <published>2020-05-07T03:55:51.000Z</published>
     <updated>2020-05-08T11:21:16.024Z</updated>
     
@@ -207,21 +207,21 @@
     
     </summary>
     
-      <category term="Tutorial" scheme="/categories/Tutorial/"/>
+      <category term="Tutorial" scheme="/MyBlog/categories/Tutorial/"/>
     
     
-      <category term="javascript" scheme="/tags/javascript/"/>
+      <category term="web" scheme="/MyBlog/tags/web/"/>
     
-      <category term="web" scheme="/tags/web/"/>
+      <category term="javascript" scheme="/MyBlog/tags/javascript/"/>
     
-      <category term="ajax" scheme="/tags/ajax/"/>
+      <category term="ajax" scheme="/MyBlog/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title>ICPC Pacific Northwest Regional Contest 2019  B. Perfect Flush</title>
-    <link href="/2020/05/05/PNRC2019B/"/>
-    <id>/2020/05/05/PNRC2019B/</id>
+    <link href="/MyBlog/2020/05/05/PNRC2019B/"/>
+    <id>/MyBlog/2020/05/05/PNRC2019B/</id>
     <published>2020-05-05T01:09:45.000Z</published>
     <updated>2020-05-05T01:30:14.539Z</updated>
     
@@ -233,19 +233,19 @@
     
     </summary>
     
-      <category term="Training" scheme="/categories/Training/"/>
+      <category term="Training" scheme="/MyBlog/categories/Training/"/>
     
     
-      <category term="vector" scheme="/tags/vector/"/>
+      <category term="vector" scheme="/MyBlog/tags/vector/"/>
     
-      <category term="单调栈" scheme="/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
+      <category term="单调栈" scheme="/MyBlog/tags/%E5%8D%95%E8%B0%83%E6%A0%88/"/>
     
   </entry>
   
   <entry>
     <title>Atcoder ABC 166 题解</title>
-    <link href="/2020/05/03/abc166/"/>
-    <id>/2020/05/03/abc166/</id>
+    <link href="/MyBlog/2020/05/03/abc166/"/>
+    <id>/MyBlog/2020/05/03/abc166/</id>
     <published>2020-05-03T14:34:04.000Z</published>
     <updated>2020-05-03T14:47:05.715Z</updated>
     
@@ -257,19 +257,19 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="/MyBlog/categories/Algorithm/"/>
     
     
-      <category term="思维" scheme="/tags/%E6%80%9D%E7%BB%B4/"/>
+      <category term="思维" scheme="/MyBlog/tags/%E6%80%9D%E7%BB%B4/"/>
     
-      <category term="atcoder" scheme="/tags/atcoder/"/>
+      <category term="atcoder" scheme="/MyBlog/tags/atcoder/"/>
     
   </entry>
   
   <entry>
     <title>Eight HDU - 1043</title>
-    <link href="/2020/05/03/hdu1043/"/>
-    <id>/2020/05/03/hdu1043/</id>
+    <link href="/MyBlog/2020/05/03/hdu1043/"/>
+    <id>/MyBlog/2020/05/03/hdu1043/</id>
     <published>2020-05-03T08:09:39.000Z</published>
     <updated>2020-05-03T08:33:09.250Z</updated>
     
@@ -281,23 +281,23 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="/MyBlog/categories/Algorithm/"/>
     
     
-      <category term="HDU" scheme="/tags/HDU/"/>
+      <category term="HDU" scheme="/MyBlog/tags/HDU/"/>
     
-      <category term="hash" scheme="/tags/hash/"/>
+      <category term="hash" scheme="/MyBlog/tags/hash/"/>
     
-      <category term="bfs" scheme="/tags/bfs/"/>
+      <category term="bfs" scheme="/MyBlog/tags/bfs/"/>
     
-      <category term="康拓展开" scheme="/tags/%E5%BA%B7%E6%8B%93%E5%B1%95%E5%BC%80/"/>
+      <category term="康拓展开" scheme="/MyBlog/tags/%E5%BA%B7%E6%8B%93%E5%B1%95%E5%BC%80/"/>
     
   </entry>
   
   <entry>
     <title>JLOI2011-飞行路线</title>
-    <link href="/2020/04/26/jloi2011/"/>
-    <id>/2020/04/26/jloi2011/</id>
+    <link href="/MyBlog/2020/04/26/jloi2011/"/>
+    <id>/MyBlog/2020/04/26/jloi2011/</id>
     <published>2020-04-26T08:50:54.000Z</published>
     <updated>2020-05-03T08:16:17.232Z</updated>
     
@@ -309,23 +309,23 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="/MyBlog/categories/Algorithm/"/>
     
     
-      <category term="Dijkstra" scheme="/tags/Dijkstra/"/>
+      <category term="Dijkstra" scheme="/MyBlog/tags/Dijkstra/"/>
     
-      <category term="Priority queue" scheme="/tags/Priority-queue/"/>
+      <category term="Priority queue" scheme="/MyBlog/tags/Priority-queue/"/>
     
-      <category term="分层图最短路" scheme="/tags/%E5%88%86%E5%B1%82%E5%9B%BE%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+      <category term="分层图最短路" scheme="/MyBlog/tags/%E5%88%86%E5%B1%82%E5%9B%BE%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
     
-      <category term="链式前向星" scheme="/tags/%E9%93%BE%E5%BC%8F%E5%89%8D%E5%90%91%E6%98%9F/"/>
+      <category term="链式前向星" scheme="/MyBlog/tags/%E9%93%BE%E5%BC%8F%E5%89%8D%E5%90%91%E6%98%9F/"/>
     
   </entry>
   
   <entry>
     <title>SCOI2009 最长距离</title>
-    <link href="/2020/04/22/SCOI2009/"/>
-    <id>/2020/04/22/SCOI2009/</id>
+    <link href="/MyBlog/2020/04/22/SCOI2009/"/>
+    <id>/MyBlog/2020/04/22/SCOI2009/</id>
     <published>2020-04-22T01:03:11.000Z</published>
     <updated>2020-04-26T08:54:38.377Z</updated>
     
@@ -337,21 +337,21 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="/MyBlog/categories/Algorithm/"/>
     
     
-      <category term="Thinking" scheme="/tags/Thinking/"/>
+      <category term="Thinking" scheme="/MyBlog/tags/Thinking/"/>
     
-      <category term="spfa" scheme="/tags/spfa/"/>
+      <category term="spfa" scheme="/MyBlog/tags/spfa/"/>
     
-      <category term="scoi" scheme="/tags/scoi/"/>
+      <category term="scoi" scheme="/MyBlog/tags/scoi/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-Markdown写作进阶——标签</title>
-    <link href="/2020/04/18/mdjj/"/>
-    <id>/2020/04/18/mdjj/</id>
+    <link href="/MyBlog/2020/04/18/mdjj/"/>
+    <id>/MyBlog/2020/04/18/mdjj/</id>
     <published>2020-04-18T14:24:11.000Z</published>
     <updated>2020-04-18T15:09:54.864Z</updated>
     
@@ -363,23 +363,23 @@
     
     </summary>
     
-      <category term="Life" scheme="/categories/Life/"/>
+      <category term="Life" scheme="/MyBlog/categories/Life/"/>
     
     
-      <category term="html" scheme="/tags/html/"/>
+      <category term="html" scheme="/MyBlog/tags/html/"/>
     
-      <category term="javascript" scheme="/tags/javascript/"/>
+      <category term="javascript" scheme="/MyBlog/tags/javascript/"/>
     
-      <category term="Hexo" scheme="/tags/Hexo/"/>
+      <category term="Hexo" scheme="/MyBlog/tags/Hexo/"/>
     
-      <category term="markdown" scheme="/tags/markdown/"/>
+      <category term="markdown" scheme="/MyBlog/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>为你的hexo博客添加动态的（可直接发布说说的）说说页面</title>
-    <link href="/2020/04/10/hexo-shuoshuo/"/>
-    <id>/2020/04/10/hexo-shuoshuo/</id>
+    <link href="/MyBlog/2020/04/10/hexo-shuoshuo/"/>
+    <id>/MyBlog/2020/04/10/hexo-shuoshuo/</id>
     <published>2020-04-10T07:33:31.000Z</published>
     <updated>2020-05-11T02:54:06.453Z</updated>
     
@@ -391,19 +391,19 @@
     
     </summary>
     
-      <category term="Life" scheme="/categories/Life/"/>
+      <category term="Life" scheme="/MyBlog/categories/Life/"/>
     
     
-      <category term="html" scheme="/tags/html/"/>
+      <category term="html" scheme="/MyBlog/tags/html/"/>
     
-      <category term="javascript" scheme="/tags/javascript/"/>
+      <category term="javascript" scheme="/MyBlog/tags/javascript/"/>
     
   </entry>
   
   <entry>
     <title>valine添加自定义表情</title>
-    <link href="/2020/04/09/valinebq/"/>
-    <id>/2020/04/09/valinebq/</id>
+    <link href="/MyBlog/2020/04/09/valinebq/"/>
+    <id>/MyBlog/2020/04/09/valinebq/</id>
     <published>2020-04-09T12:54:31.000Z</published>
     <updated>2020-04-21T13:24:44.425Z</updated>
     
@@ -415,45 +415,19 @@
     
     </summary>
     
-      <category term="Tutorial" scheme="/categories/Tutorial/"/>
+      <category term="Tutorial" scheme="/MyBlog/categories/Tutorial/"/>
     
     
-      <category term="Tutorial" scheme="/tags/Tutorial/"/>
+      <category term="Tutorial" scheme="/MyBlog/tags/Tutorial/"/>
     
-      <category term="valine" scheme="/tags/valine/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Codeforces Round 632 (Div. 2) D. Challenges in school №41</title>
-    <link href="/2020/04/09/cf1333D/"/>
-    <id>/2020/04/09/cf1333D/</id>
-    <published>2020-04-09T09:08:19.000Z</published>
-    <updated>2020-04-09T10:04:08.024Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Challenges-in-school-№41"><a href="#Challenges-in-school-№41" class="headerlink" title="Challenges in school №41"></a>Challenges in school №41</h1><p>Link: <a href="https://codeforces.com/contest/1333/problem/D" target="_blank" rel="noopener">Challenges in school №41</a></p><h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>There are n children, who study at the school №41. It is well-known that they are good mathematicians. Once at a break, they arranged a challenge for themselves. All children arranged in a row and turned heads either to the left or to the right.</p><p>Children can do the following: in one second several pairs of neighboring children who are looking at each other can simultaneously turn the head in the opposite direction. For instance, the one who was looking at the right neighbor turns left and vice versa for the second child. Moreover, every second at least one pair of neighboring children performs such action. They are going to finish when there is no pair of neighboring children who are looking at each other.</p><p>You are given the number n, the initial arrangement of children and the number k. You have to find a way for the children to act if they want to finish the process in exactly k seconds. More formally, for each of the k moves, you need to output the numbers of the children who turn left during this move.</p><p>For instance, for the configuration shown below and k=2 children can do the following steps:<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171429.webp" data-fancybox="images" data-caption="20200409171429" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171429.webp" class="img-shadow img-margin"></center></a></p><p>At the beginning, two pairs make move: (1,2) and (3,4). After that, we receive the following configuration:<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171448.webp" data-fancybox="images" data-caption="20200409171448" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171448.webp" class="img-shadow img-margin"></center></a></p><p>At the second move pair (2,3) makes the move. The final configuration is reached. Good job.<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171459.webp" data-fancybox="images" data-caption="20200409171459" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171459.webp" class="img-shadow img-margin"></center></a></p><p>It is guaranteed that if the solution exists, it takes not more than <script type="math/tex">n^2</script> &quot;headturns&quot;.</p><p>Input<br>The first line of input contains two integers n and k (<script type="math/tex">2 \le n \le 3000</script>, <script type="math/tex">1 \le k \le 3000000</script>)  — the number of children and required number of moves.</p><p>The next line contains a string of length n and consists only of characters L and R, where L means that the child looks to the left and R means that the child looks to the right.</p><p>Output<br>If there is no solution, print a single line with number −1.</p><p>Otherwise, output k lines. Each line has to start with a number <script type="math/tex">n_i</script> (<script type="math/tex">1\le n_i \le \frac{n}{2}</script>)  — the number of pairs of children, who turn at this move. After that print <script type="math/tex">n_i</script> distinct integers  — the numbers of the children who will turn left during this move.</p><p>After performing all &quot;headturns&quot;, there can&#39;t be a pair of two neighboring children looking at each other.</p><p>If there are many solutions, print any of them.</p><p>Examples</p><blockquote><p>input<br>2 1<br>RL<br>output<br>1 1<br>input<br>2 1<br>LR<br>output<br>-1<br>input<br>4 2<br>RLRL<br>output<br>2 1 3<br>1 2</p></blockquote><p>Note<br>The first sample contains a pair of children who look at each other. After one move, they can finish the process.</p><p>In the second sample, children can&#39;t make any move. As a result, they can&#39;t end in k&gt;0 moves.</p><p>The third configuration is described in the statement.</p><h2 id="Problem-solving"><a href="#Problem-solving" class="headerlink" title="Problem solving"></a>Problem solving</h2><p>这道题的意思是有n个小朋友，初始的时候每个小朋友朝向的方向都会给出来。每一秒，你可以选择任意对且至少一对对着看的小朋友让他们看到反方向，即<code>RL-&gt;LR</code>。<br>问你在能否正好在k秒后，使得所有小朋友中不存在对着看的。不能的话输出<code>-1</code>。</p><p>因为将一对小朋友操作之后，可能会产生另一对对着看的小朋友，所以我们可以发现，总操作次数会有一个最大值和最小值。</p><ul><li>当你每一次操作都选出当前所有对着看的小朋友并让他们看向反方向的时候，这是最小值。</li><li>当你每一次操作只选择一对小朋友让他们看向反方向的时候，这是最大值。</li></ul><p>所以如果k在这个范围内，一定存在可行解。因为我们可以通过贪心调整每一次选择的小朋友的对数来达到k。<br>反之，输出<code>-1</code>。</p><p>所以我们可以首先求出最小值和最大值，然后构建答案。<br>构建的时候，先一个一个的放，当剩下的时间（k）与剩下的需要操作的最小次数相等时，按照最小的操作次数来进行输出。</p><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><pre><code class="lang-c++">#include&lt;bits/stdc++.h&gt;using namespace std;#define pb push_backconst int maxn = 3e3+10;vector&lt;int&gt; v[maxn];char s[maxn];int main(){    int n,k,minn=0,maxx=0;    scanf(&quot;%d%d%s&quot;,&amp;n,&amp;k,s+1);    while(1){        minn++;        int flag=0;        for(int i=1;i&lt;n;i++){            if(s[i]==&#39;R&#39;&amp;&amp;s[i+1]==&#39;L&#39;){                flag=1;                v[minn].pb(i);            }        }        if(!flag)   break;//如果已经没有可以操作的小朋友，退出循环        for(auto pos:v[minn]){            swap(s[pos],s[pos+1]);        }        maxx+=v[minn].size();    }//minn最小值，maxn最大值    if(k&lt;minn-1||k&gt;maxx){        puts(&quot;-1&quot;);        return 0;    }    for(int i=1;i&lt;minn;i++){        while(!v[i].empty()&amp;&amp;k&gt;minn-i){            printf(&quot;%d %d\n&quot;, 1, v[i].back());            v[i].pop_back();            k--;        }//先一个一个放        if(!v[i].empty()){            printf(&quot;%d&quot;, v[i].size());            for (auto it : v[i])                printf(&quot; %d&quot;, it);            puts(&quot;&quot;);            k--;        }//然后按照最小的操作次数输出    }    return 0;}</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      最近打cf打的越来越自闭了。
-    
-    </summary>
-    
-      <category term="c/c++" scheme="/categories/c-c/"/>
-    
-    
-      <category term="c/c++" scheme="/tags/c-c/"/>
-    
-      <category term="codeforces" scheme="/tags/codeforces/"/>
-    
-      <category term="贪心" scheme="/tags/%E8%B4%AA%E5%BF%83/"/>
+      <category term="valine" scheme="/MyBlog/tags/valine/"/>
     
   </entry>
   
   <entry>
     <title>Codeforces Round 632 (Div. 2) F. Kate and imperfection</title>
-    <link href="/2020/04/09/cf1333F/"/>
-    <id>/2020/04/09/cf1333F/</id>
+    <link href="/MyBlog/2020/04/09/cf1333F/"/>
+    <id>/MyBlog/2020/04/09/cf1333F/</id>
     <published>2020-04-09T09:08:19.000Z</published>
     <updated>2020-04-09T10:03:47.036Z</updated>
     
@@ -465,19 +439,45 @@
     
     </summary>
     
-      <category term="c/c++" scheme="/categories/c-c/"/>
+      <category term="c/c++" scheme="/MyBlog/categories/c-c/"/>
     
     
-      <category term="c/c++" scheme="/tags/c-c/"/>
+      <category term="c/c++" scheme="/MyBlog/tags/c-c/"/>
     
-      <category term="codeforces" scheme="/tags/codeforces/"/>
+      <category term="codeforces" scheme="/MyBlog/tags/codeforces/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Codeforces Round 632 (Div. 2) D. Challenges in school №41</title>
+    <link href="/MyBlog/2020/04/09/cf1333D/"/>
+    <id>/MyBlog/2020/04/09/cf1333D/</id>
+    <published>2020-04-09T09:08:19.000Z</published>
+    <updated>2020-04-09T10:04:08.024Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Challenges-in-school-№41"><a href="#Challenges-in-school-№41" class="headerlink" title="Challenges in school №41"></a>Challenges in school №41</h1><p>Link: <a href="https://codeforces.com/contest/1333/problem/D" target="_blank" rel="noopener">Challenges in school №41</a></p><h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>There are n children, who study at the school №41. It is well-known that they are good mathematicians. Once at a break, they arranged a challenge for themselves. All children arranged in a row and turned heads either to the left or to the right.</p><p>Children can do the following: in one second several pairs of neighboring children who are looking at each other can simultaneously turn the head in the opposite direction. For instance, the one who was looking at the right neighbor turns left and vice versa for the second child. Moreover, every second at least one pair of neighboring children performs such action. They are going to finish when there is no pair of neighboring children who are looking at each other.</p><p>You are given the number n, the initial arrangement of children and the number k. You have to find a way for the children to act if they want to finish the process in exactly k seconds. More formally, for each of the k moves, you need to output the numbers of the children who turn left during this move.</p><p>For instance, for the configuration shown below and k=2 children can do the following steps:<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171429.webp" data-fancybox="images" data-caption="20200409171429" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171429.webp" class="img-shadow img-margin"></center></a></p><p>At the beginning, two pairs make move: (1,2) and (3,4). After that, we receive the following configuration:<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171448.webp" data-fancybox="images" data-caption="20200409171448" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171448.webp" class="img-shadow img-margin"></center></a></p><p>At the second move pair (2,3) makes the move. The final configuration is reached. Good job.<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171459.webp" data-fancybox="images" data-caption="20200409171459" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200409171459.webp" class="img-shadow img-margin"></center></a></p><p>It is guaranteed that if the solution exists, it takes not more than <script type="math/tex">n^2</script> &quot;headturns&quot;.</p><p>Input<br>The first line of input contains two integers n and k (<script type="math/tex">2 \le n \le 3000</script>, <script type="math/tex">1 \le k \le 3000000</script>)  — the number of children and required number of moves.</p><p>The next line contains a string of length n and consists only of characters L and R, where L means that the child looks to the left and R means that the child looks to the right.</p><p>Output<br>If there is no solution, print a single line with number −1.</p><p>Otherwise, output k lines. Each line has to start with a number <script type="math/tex">n_i</script> (<script type="math/tex">1\le n_i \le \frac{n}{2}</script>)  — the number of pairs of children, who turn at this move. After that print <script type="math/tex">n_i</script> distinct integers  — the numbers of the children who will turn left during this move.</p><p>After performing all &quot;headturns&quot;, there can&#39;t be a pair of two neighboring children looking at each other.</p><p>If there are many solutions, print any of them.</p><p>Examples</p><blockquote><p>input<br>2 1<br>RL<br>output<br>1 1<br>input<br>2 1<br>LR<br>output<br>-1<br>input<br>4 2<br>RLRL<br>output<br>2 1 3<br>1 2</p></blockquote><p>Note<br>The first sample contains a pair of children who look at each other. After one move, they can finish the process.</p><p>In the second sample, children can&#39;t make any move. As a result, they can&#39;t end in k&gt;0 moves.</p><p>The third configuration is described in the statement.</p><h2 id="Problem-solving"><a href="#Problem-solving" class="headerlink" title="Problem solving"></a>Problem solving</h2><p>这道题的意思是有n个小朋友，初始的时候每个小朋友朝向的方向都会给出来。每一秒，你可以选择任意对且至少一对对着看的小朋友让他们看到反方向，即<code>RL-&gt;LR</code>。<br>问你在能否正好在k秒后，使得所有小朋友中不存在对着看的。不能的话输出<code>-1</code>。</p><p>因为将一对小朋友操作之后，可能会产生另一对对着看的小朋友，所以我们可以发现，总操作次数会有一个最大值和最小值。</p><ul><li>当你每一次操作都选出当前所有对着看的小朋友并让他们看向反方向的时候，这是最小值。</li><li>当你每一次操作只选择一对小朋友让他们看向反方向的时候，这是最大值。</li></ul><p>所以如果k在这个范围内，一定存在可行解。因为我们可以通过贪心调整每一次选择的小朋友的对数来达到k。<br>反之，输出<code>-1</code>。</p><p>所以我们可以首先求出最小值和最大值，然后构建答案。<br>构建的时候，先一个一个的放，当剩下的时间（k）与剩下的需要操作的最小次数相等时，按照最小的操作次数来进行输出。</p><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><pre><code class="lang-c++">#include&lt;bits/stdc++.h&gt;using namespace std;#define pb push_backconst int maxn = 3e3+10;vector&lt;int&gt; v[maxn];char s[maxn];int main(){    int n,k,minn=0,maxx=0;    scanf(&quot;%d%d%s&quot;,&amp;n,&amp;k,s+1);    while(1){        minn++;        int flag=0;        for(int i=1;i&lt;n;i++){            if(s[i]==&#39;R&#39;&amp;&amp;s[i+1]==&#39;L&#39;){                flag=1;                v[minn].pb(i);            }        }        if(!flag)   break;//如果已经没有可以操作的小朋友，退出循环        for(auto pos:v[minn]){            swap(s[pos],s[pos+1]);        }        maxx+=v[minn].size();    }//minn最小值，maxn最大值    if(k&lt;minn-1||k&gt;maxx){        puts(&quot;-1&quot;);        return 0;    }    for(int i=1;i&lt;minn;i++){        while(!v[i].empty()&amp;&amp;k&gt;minn-i){            printf(&quot;%d %d\n&quot;, 1, v[i].back());            v[i].pop_back();            k--;        }//先一个一个放        if(!v[i].empty()){            printf(&quot;%d&quot;, v[i].size());            for (auto it : v[i])                printf(&quot; %d&quot;, it);            puts(&quot;&quot;);            k--;        }//然后按照最小的操作次数输出    }    return 0;}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      最近打cf打的越来越自闭了。
+    
+    </summary>
+    
+      <category term="c/c++" scheme="/MyBlog/categories/c-c/"/>
+    
+    
+      <category term="c/c++" scheme="/MyBlog/tags/c-c/"/>
+    
+      <category term="codeforces" scheme="/MyBlog/tags/codeforces/"/>
+    
+      <category term="贪心" scheme="/MyBlog/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
   <entry>
     <title>Hexo使用hexo-generator-search添加local-search</title>
-    <link href="/2020/04/07/local-search/"/>
-    <id>/2020/04/07/local-search/</id>
+    <link href="/MyBlog/2020/04/07/local-search/"/>
+    <id>/MyBlog/2020/04/07/local-search/</id>
     <published>2020-04-07T14:32:43.000Z</published>
     <updated>2020-04-08T02:45:32.366Z</updated>
     
@@ -489,17 +489,17 @@
     
     </summary>
     
-      <category term="Tutorial" scheme="/categories/Tutorial/"/>
+      <category term="Tutorial" scheme="/MyBlog/categories/Tutorial/"/>
     
     
-      <category term="hexo" scheme="/tags/hexo/"/>
+      <category term="hexo" scheme="/MyBlog/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>HDU-1074  Doing Homework</title>
-    <link href="/2020/04/06/hdu1074/"/>
-    <id>/2020/04/06/hdu1074/</id>
+    <link href="/MyBlog/2020/04/06/hdu1074/"/>
+    <id>/MyBlog/2020/04/06/hdu1074/</id>
     <published>2020-04-06T08:28:38.000Z</published>
     <updated>2020-04-14T08:21:53.946Z</updated>
     
@@ -511,16 +511,16 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="/MyBlog/categories/Algorithm/"/>
     
     
-      <category term="Algorithm" scheme="/tags/Algorithm/"/>
+      <category term="Algorithm" scheme="/MyBlog/tags/Algorithm/"/>
     
-      <category term="c/c++" scheme="/tags/c-c/"/>
+      <category term="c/c++" scheme="/MyBlog/tags/c-c/"/>
     
-      <category term="HDU" scheme="/tags/HDU/"/>
+      <category term="HDU" scheme="/MyBlog/tags/HDU/"/>
     
-      <category term="状压dp" scheme="/tags/%E7%8A%B6%E5%8E%8Bdp/"/>
+      <category term="状压dp" scheme="/MyBlog/tags/%E7%8A%B6%E5%8E%8Bdp/"/>
     
   </entry>
   
