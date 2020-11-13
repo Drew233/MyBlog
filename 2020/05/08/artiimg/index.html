@@ -654,7 +654,15 @@ document.addEventListener(&#39;paste&#39;, function (event) {//检测粘贴时�
       <p style="color: #666666;" id="page_loading_time"></p>
     </div>
    
-
+    
+    <span id="showDays"></span>
+    <script>
+    var birthDay = new Date("10/20/2020");  // 这里填写网站第一次运行日期
+    var now = new Date();
+    var duration = now.getTime() - birthDay.getTime(); 
+    var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+    document.getElementById("showDays").innerHTML = "我跟小年在一起已经"+total+"天了，耶"; //这里就是总运行天数
+    </script>
     <p style="font-family: 'Ubuntu', sans-serif;">
         <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a></a>
         </span>

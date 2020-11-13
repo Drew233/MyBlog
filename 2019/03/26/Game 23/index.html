@@ -509,15 +509,15 @@ int main()
           
             <div class="post-nepre half previous">
           
-            <a href="/2019/03/26/GCD和LCM/" rel="prev">
+            <a href="/2019/03/26/Even Substrings/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804091037.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804091037.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804091632.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804091632.webp">
               </div>
               <span class="label">
               Previous Post</span>
               <div class="info">
                 <h3>
-                GCD和LCM</h3>
+                Even Substrings</h3>
                 <hr>
               </div>
             </a>
@@ -527,15 +527,15 @@ int main()
           
             <div class="post-nepre half next">
           
-            <a href="/2019/03/26/Hexo-bgchange/" rel="next">
+            <a href="/2019/03/26/GCD和LCM/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804090222.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804090222.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804091037.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804091037.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                Hexo背景的更换</h3>
+                GCD和LCM</h3>
                 <hr>
               </div>
             </a>
@@ -607,7 +607,15 @@ int main()
       <p style="color: #666666;" id="page_loading_time"></p>
     </div>
    
-
+    
+    <span id="showDays"></span>
+    <script>
+    var birthDay = new Date("10/20/2020");  // 这里填写网站第一次运行日期
+    var now = new Date();
+    var duration = now.getTime() - birthDay.getTime(); 
+    var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+    document.getElementById("showDays").innerHTML = "我跟小年在一起已经"+total+"天了，耶"; //这里就是总运行天数
+    </script>
     <p style="font-family: 'Ubuntu', sans-serif;">
         <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a></a>
         </span>
