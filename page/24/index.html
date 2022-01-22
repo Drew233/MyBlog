@@ -356,13 +356,45 @@
       <div class="blank" style="padding-top: 0px;"></div>
 <div id="content" class="site-content">
   
-  <div class="notice" style="margin-top:60px">
-    <i class="iconfont icon-notification">
-    </i>
-    <div class="notice-content" id="hitokoto"><script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script></div>
-  </div>
-  
-  <div class="top-feature-row">
+      <style>
+        div#artitalk_part {
+          padding: 0 20px;
+          width: auto;
+          height: auto;
+        }
+
+        div#artitalk_main div#shuoshuo_content {
+          padding: 0;
+        }
+
+        div#artitalk_part .power {
+          display: none;
+        }
+
+        div#artitalk_part div#readButton {
+          display: none;
+        }
+      </style>
+      <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
+        <i class="fa fa-anchor" aria-hidden="true">
+        </i>
+        <a href="shuoshuo" style="color: #666;">简单说两句</a>
+      </h1>
+      <div id="artitalk_part">
+        <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+        <div id="artitalk_main"></div>
+        <script>
+          new Artitalk({
+            appId: 'v7RUELXqRXpxactiQlFOa7st-MdYXbMMI',
+            appKey: 'bUG2OW4oaVi3OKPNiPxGDy8o',
+            color1: '#E6E6FA',
+            color2: '#F0FFFF',
+            color3: 'black',
+            pageSize: 2,
+          })
+        </script>
+      </div>
+      <div class="top-feature-row">
   <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
   <i class="fa fa-anchor" aria-hidden="true">
   </i>
@@ -412,12 +444,13 @@
   
 </div>
 
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
-      <i class="fa fa-snowflake-o" aria-hidden="true"></i>
-      Discovery</h1>
-      
+        <div id="primary" class="content-area">
+          <main id="main" class="site-main" role="main">
+            <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
+              <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+              Discovery
+            </h1>
+            
   <!-- 首页默认取最最新文章集 -->
   
     
@@ -856,20 +889,19 @@
   
 
 
-    </main>
-      <!-- 首页默认取最最新文章集 -->
-    <!-- 
+          </main>
+          <!-- 首页默认取最最新文章集 -->
+          <!-- 
       <nav class="navigator">
         
         <a class="extend prev" rel="prev" href="/page/23/"><i class="iconfont icon-back"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="page-number" href="/page/23/">23</a><span class="page-number current">24</span><a class="page-number" href="/page/25/">25</a><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/25/"><i class="iconfont icon-right"></i></a>
       </nav>
      -->
-  </div>
-  
-    <div id="pagination"><a href="/page/25/" class="">Previous</a></div>
-  
+        </div>
+        
+          <div id="pagination"><a href="/page/25/" class="">Previous</a></div>
+          
 </div>
-
     </div>
     
     
