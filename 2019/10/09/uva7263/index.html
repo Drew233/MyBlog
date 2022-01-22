@@ -354,17 +354,19 @@
 
      
       <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"> -->
 <div class="pattern-center-blank"></div>
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20191009190320.webp);" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191009190320.webp">
+
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20191009190320.webp);"
+      src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191009190320.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      UVA 7263 - Today Is a Rainy Day</h1>
+        UVA 7263 - Today Is a Rainy Day
+      </h1>
       <p class="entry-census">
         <span>
           <a href="https://cndrew.cn/">
@@ -372,69 +374,75 @@
           </a>
         </span>
         <span>
-          <a href="https://cndrew.cn/">Uncle_drew</a>
+          <a href="https://cndrew.cn/">
+            Uncle_drew
+          </a>
         </span>
         <span class="bull">
-        ·</span>
-        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>2019-10-9<span class="bull">
-        ·</span>
-      <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读 &nbsp·&nbsp
-         <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：2.1k</span> &nbsp·&nbsp
-           <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈8分钟</span></p>
+          ·</span>
+        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>
+        2019-10-9<span class="bull">
+            ·</span>
+          <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读
+          &nbsp·&nbsp
+          <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：2.1k</span> &nbsp·&nbsp
+          <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈8分钟</span>
+      </p>
     </header>
   </div>
+  
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+          <div id="point"></div>
 
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <div id="point"></div>
-
-        <script>
-          function intervalTime(startTime,endTime){
-              var date1 = new Date(startTime);
-              var date2 = new Date(endTime);  
-              var date3 = date2.getTime() - date1.getTime(); 
-              var days = Math.floor(date3 / (24 * 3600 * 1000));
-              return days;
-          }
-          function format(Date){
-            var Y = Date.getFullYear();
-            var M = Date.getMonth() + 1;
+          <script>
+            function intervalTime(startTime, endTime) {
+              var date1 = new Date(startTime);
+              var date2 = new Date(endTime);
+              var date3 = date2.getTime() - date1.getTime();
+              var days = Math.floor(date3 / (24 * 3600 * 1000));
+              return days;
+            }
+            function format(Date) {
+              var Y = Date.getFullYear();
+              var M = Date.getMonth() + 1;
               M = M < 10 ? '0' + M : M;// 不够两位补充0
-            var D = Date.getDate();
+              var D = Date.getDate();
               D = D < 10 ? '0' + D : D;
-            var H = Date.getHours();
+              var H = Date.getHours();
               H = H < 10 ? '0' + H : H;
-            var Mi = Date.getMinutes();
+              var Mi = Date.getMinutes();
               Mi = Mi < 10 ? '0' + Mi : Mi;
-            var S = Date.getSeconds();
+              var S = Date.getSeconds();
               S = S < 10 ? '0' + S : S;
               return Y + '-' + M + '-' + D + ' ' + H + ':' + Mi + ':' + S;
-          }
-          var pdate = new Date("Wed Oct 09 2019 18:10:00 GMT+0800");
-          var update = new Date("Tue Oct 20 2020 22:57:58 GMT+0800");
-          var now = new Date();
-          now=format(now);
-          pdate=format(pdate);
-          update=format(update);
-          var days=intervalTime(pdate,now),udays=intervalTime(update,now);
-          var mid=parseInt(days,10);
-          var mi=parseInt("30",10);
-          // alert(mid+mi);
-          if(mid > mi){
-            document.getElementById("point").innerHTML="<div class=\"tip share\">请注意，本文编写于"+days+"天前，最后修改于"+udays+"天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
-            // alert(days);
-          }
-        </script>
+            }
+            var pdate = new Date("Wed Oct 09 2019 18:10:00 GMT+0800");
+            var update = new Date("Tue Oct 20 2020 22:57:58 GMT+0800");
+            var now = new Date();
+            now = format(now);
+            pdate = format(pdate);
+            update = format(update);
+            var days = intervalTime(pdate, now), udays = intervalTime(update, now);
+            var mid = parseInt(days, 10);
+            var mi = parseInt("30", 10);
+            // alert(mid+mi);
+            if (mid > mi) {
+              document.getElementById("point").innerHTML = "<div class=\"tip share\">请注意，本文编写于" + days + "天前，最后修改于" + udays + "天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
+              // alert(days);
+            }
+          </script>
 
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
+          <article id="post-1"
+            class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+            <div class="toc"></div>
+            <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+            
 
-        <div class="entry-content">
+                <div class="entry-content">
 
-          <p>Link: <a href="https://vjudge.net/contest/332255#problem/C" target="_blank" rel="noopener">Vjudge</a><br>      　　　<a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=5275" target="_blank" rel="noopener">UVA</a></p>
+                  <p>Link: <a href="https://vjudge.net/contest/332255#problem/C" target="_blank" rel="noopener">Vjudge</a><br>      　　　<a href="https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=5275" target="_blank" rel="noopener">UVA</a></p>
 <p>Description:<br>PDF题面:<a href="https://vj.z180.cn/6b8ba036b2d9f7d4d3608e470fd6d7ff?v=1570346524" target="_blank" rel="noopener">Today is a rainy day</a><br>Today is a rainy day. The temperature is apparently lower than yesterday. Winter is coming. It always<br>leaves people feeling fatigued and tired.<br>Lee hasn’t prepared for winter yet. As he wakes up this morning, he looks out of the window.<br>Yesterday’s shining sunlight can no longer be seen. It is dark outside. The sky looks so heavy that it<br>may collapse down at any moment. Lee gets out of his bed, shakes his head slightly to make himself<br>more awake. But it’s of no use for him. Then he goes to the restroom and washes up.<br>Lee has a class in fifteen minutes. If he sets out immediately, he may gets to the classroom on time.<br>But he is not in the mood to do so. He decides to skip class and does something more interesting to<br>train his mind.<br>He takes out a draft paper and writes a list of digits using a dice. It is obvious that the digits are<br>all between 1 and 6. And then he applies two kind of modifications to the digits. The first kind is<br>to modify one digit into another. The second kind is to modify one kind of digits into another. For<br>example, he can modify “12123” to “12121” using the first kind of modification, or modify “12123” to<br>“13133” using the second kind of modification. In the process of modification, all digits should be in<br>{1, 2, 3, 4, 5, 6};<br>After a few modifications, he feels tired but pleased. He’s got a list of digits which is very different<br>from the original one. Thinking of the next thing to do, Lee becomes a little excited. He is going to<br>figure out the least number of modifications to transform the final list back to the original one using<br>the same rules.<br>Lee made it in a very short time. Can you do this like him?<br>Input<br>There are up to 100 test cases.<br>For each test case, there are two lines containing two lists of digits, representing the original list<br>and the final list in order. The digits are all between 1 and 6. It is guaranteed that two lists are of<br>same length. The length will not be greater than 110.<br>Output<br>For each test case, output one integer, the answer.<br>Sample Input<br>22345611<br>12345611<br>2234562221<br>1234561221<br>2234562211<br>1234561111<br>22345622112<br>12345611111<br>654321654321654321654321<br>123456123456123456123456<br>Sample Output<br>1<br>2<br>3<br>3<br>11</p>
 <p>Problem solving:<br>这道题的意思就是给你两个只有1~6这六个数字组成的字符串，有一种操作是把一个字符串中的一类字符串都换成另一个。比如说这个字符串里面的1全部换成2，第二种操作就是单独的换一个。都是可以任意换的，问你最少换几次，能使第二个字符串和第一个字符串相等。</p>
 <p>一开始信誓旦旦的跟队友说这是一道dp的题，然后心安理得的训练赛的时候跳过。<br>后来补题的时候发现，哦，原来是BFS，啊！怎么能这么写，太妙了吧。（好了不<del>BB</del>了，我们开始讨论这个解题思路</p>
@@ -513,71 +521,81 @@ int main()
 </code></pre>
 <p>可能看完了你还不是很明白，其实理解的关键就在于BFS预处理得到的结果以及<code>pre[i][y[j] - &#39;0&#39; - 1] != x[j])</code>的理解。<br>这里我在说一遍（没用的话也没事，如果帮到了你我很荣幸）：BFS中从123456开始搜索，每次得到的情况都是其中一个数字变化成另外一个数字的情况。例如，pre字符串数组中会有223456，323456，111111等。代表的就是对应位置上的数字经过了ma[pre[i]]次变化之后变成的数字。初始状态下字符串为123456，正好跟下标是对应的，所以我们可以直接用pre[i][S[i]-&#39;0&#39;-1]来表示当前pre[i]的情况下变化成的数字，在跟之前的字符串的这个位置的字符进行比较，如果不等，就再来一次只变化一个的操作，答案加一。</p>
 
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏<div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                </div>
+                <!-- .entry-content -->
+                <div class="single-reward">
+                  <div class="reward-open">赏<div class="reward-main">
+                      <ul class="reward-row">
+                        <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
+                        <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-        
+                <div style="text-align:center; width: 100%" class="social-share share-mobile"
+                  data-disabled="diandian, tencent"></div>
+                <footer class="post-footer">
+                  <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+                      target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                      知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+                  <div class="post-tags">
+                  </div>
+                  <div class="post-share">
+                    <div class="social-share sharehidden share-component"></div>
+                    <i class="iconfont show-share icon-forward"></i>
+                  </div>
+                </footer><!-- .entry-footer -->
+          </article>
+          <!-- #post-## -->
+          <div class="toc" style="background: none;"></div>
+          <section class="post-squares nextprev">
+
+            
+              
+                <div class="post-nepre half previous">
+                  
+                        <a href="/2019/10/13/Triangle/" rel="prev">
+                          <div class="background">
+                            <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191013144613.webp"
+                              style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                              onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191013144613.webp">
+                          </div>
+                          <span class="label">
+                            Previous Post</span>
+                          <div class="info">
+                            <h3>
+                              HDU - 6222   Heron and His Triangle
+                            </h3>
+                            <hr>
+                          </div>
+                        </a>
+                    </div>
+                    
+                      
+                        
+                          <div class="post-nepre half next">
+                            
+                                  <a href="/2019/10/05/nanshou/" rel="next">
+                                    <div class="background">
+                                      <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp"
+                                        data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191005170845.webp"
+                                        style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                                        onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191005170845.webp">
+                                    </div>
+                                    <span class="label">
+                                      Next Post</span>
+                                    <div class="info">
+                                      <h3>
+                                        The 2016 ACM-ICPC Asia China-Final Contest  L - World Cup
+                                      </h3>
+                                      <hr>
+                                    </div>
+                                  </a>
+                              </div>
+                              
+          </section>
           
-            <div class="post-nepre half previous">
-          
-            <a href="/2019/10/13/Triangle/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191013144613.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191013144613.webp">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                HDU - 6222   Heron and His Triangle</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2019/10/05/nanshou/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191005170845.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20191005170845.webp">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                The 2016 ACM-ICPC Asia China-Final Contest  L - World Cup</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
-      
   
 <div id="vcomments"></div>
 <script>
@@ -599,23 +617,28 @@ int main()
 </script>
 
 
-      
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image" alt="Uncle_drew" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="https://cndrew.cn/" itemprop="url" rel="author">Uncle_drew</a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i></p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
-</div>
+
+            <section class="author-profile">
+              <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image"
+                    alt="Uncle_drew" height="70" width="70"></a>
+                <div class="meta">
+                  <span class="title">Author</span>
+                  <h3 itemprop="name">
+                    <a href="https://cndrew.cn/" itemprop="url" rel="author">
+                      Uncle_drew
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <hr>
+              <p><i class="iconfont icon-write"></i>
+                
+              </p>
+            </section>
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    </div>
 
 
     </div>
@@ -626,7 +649,7 @@ int main()
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 Uncle_drew<br>
+      &copy; 2022 Uncle_drew<br>
       powered_by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -678,7 +701,7 @@ int main()
       <span class="badge-subject">PV</span><span class="badge-value bg-orange" id="busuanzi_value_site_pv" target="_blank" title="本站浏览量"></span>
     </div>
     <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.7k</span>
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.8k</span>
     </div>
     </div><!-- .site-info -->
 

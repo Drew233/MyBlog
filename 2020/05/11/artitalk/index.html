@@ -354,17 +354,19 @@
 
      
       <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"> -->
 <div class="pattern-center-blank"></div>
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200511100853.webp);" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200511100853.webp">
+
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200511100853.webp);"
+      src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200511100853.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      Hexo添加可实时发布的说说界面 | Artitalk.js</h1>
+        Hexo添加可实时发布的说说界面 | Artitalk.js
+      </h1>
       <p class="entry-census">
         <span>
           <a href="https://cndrew.cn/">
@@ -372,69 +374,75 @@
           </a>
         </span>
         <span>
-          <a href="https://cndrew.cn/">Uncle_drew</a>
+          <a href="https://cndrew.cn/">
+            Uncle_drew
+          </a>
         </span>
         <span class="bull">
-        ·</span>
-        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>2020-5-11<span class="bull">
-        ·</span>
-      <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读 &nbsp·&nbsp
-         <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：636</span> &nbsp·&nbsp
-           <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈2分钟</span></p>
+          ·</span>
+        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>
+        2020-5-11<span class="bull">
+            ·</span>
+          <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读
+          &nbsp·&nbsp
+          <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：636</span> &nbsp·&nbsp
+          <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈2分钟</span>
+      </p>
     </header>
   </div>
+  
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+          <div id="point"></div>
 
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <div id="point"></div>
-
-        <script>
-          function intervalTime(startTime,endTime){
-              var date1 = new Date(startTime);
-              var date2 = new Date(endTime);  
-              var date3 = date2.getTime() - date1.getTime(); 
-              var days = Math.floor(date3 / (24 * 3600 * 1000));
-              return days;
-          }
-          function format(Date){
-            var Y = Date.getFullYear();
-            var M = Date.getMonth() + 1;
+          <script>
+            function intervalTime(startTime, endTime) {
+              var date1 = new Date(startTime);
+              var date2 = new Date(endTime);
+              var date3 = date2.getTime() - date1.getTime();
+              var days = Math.floor(date3 / (24 * 3600 * 1000));
+              return days;
+            }
+            function format(Date) {
+              var Y = Date.getFullYear();
+              var M = Date.getMonth() + 1;
               M = M < 10 ? '0' + M : M;// 不够两位补充0
-            var D = Date.getDate();
+              var D = Date.getDate();
               D = D < 10 ? '0' + D : D;
-            var H = Date.getHours();
+              var H = Date.getHours();
               H = H < 10 ? '0' + H : H;
-            var Mi = Date.getMinutes();
+              var Mi = Date.getMinutes();
               Mi = Mi < 10 ? '0' + Mi : Mi;
-            var S = Date.getSeconds();
+              var S = Date.getSeconds();
               S = S < 10 ? '0' + S : S;
               return Y + '-' + M + '-' + D + ' ' + H + ':' + Mi + ':' + S;
-          }
-          var pdate = new Date("Mon May 11 2020 09:45:23 GMT+0800");
-          var update = new Date("Tue Oct 20 2020 22:57:55 GMT+0800");
-          var now = new Date();
-          now=format(now);
-          pdate=format(pdate);
-          update=format(update);
-          var days=intervalTime(pdate,now),udays=intervalTime(update,now);
-          var mid=parseInt(days,10);
-          var mi=parseInt("30",10);
-          // alert(mid+mi);
-          if(mid > mi){
-            document.getElementById("point").innerHTML="<div class=\"tip share\">请注意，本文编写于"+days+"天前，最后修改于"+udays+"天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
-            // alert(days);
-          }
-        </script>
+            }
+            var pdate = new Date("Mon May 11 2020 09:45:23 GMT+0800");
+            var update = new Date("Tue Oct 20 2020 22:57:55 GMT+0800");
+            var now = new Date();
+            now = format(now);
+            pdate = format(pdate);
+            update = format(update);
+            var days = intervalTime(pdate, now), udays = intervalTime(update, now);
+            var mid = parseInt(days, 10);
+            var mi = parseInt("30", 10);
+            // alert(mid+mi);
+            if (mid > mi) {
+              document.getElementById("point").innerHTML = "<div class=\"tip share\">请注意，本文编写于" + days + "天前，最后修改于" + udays + "天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
+              // alert(days);
+            }
+          </script>
 
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
+          <article id="post-1"
+            class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+            <div class="toc"></div>
+            <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+            
 
-        <div class="entry-content">
+                <div class="entry-content">
 
-          <div class="note quote"><p>Artitalk，前hexo-shuoshuo，重铸了一下，使用方法其实差不多，但是好多朋友都说看不太懂，所以再开（水）一篇文章介绍一下它的使用吧。注：本文只讲解简单使用。关于本js的详细介绍请移步文档：<a href="https://artitalk.js.org/" target="_blank" rel="noopener">https://artitalk.js.org/</a></p></div>
+                  <div class="note quote"><p>Artitalk，前hexo-shuoshuo，重铸了一下，使用方法其实差不多，但是好多朋友都说看不太懂，所以再开（水）一篇文章介绍一下它的使用吧。注：本文只讲解简单使用。关于本js的详细介绍请移步文档：<a href="https://artitalk.js.org/" target="_blank" rel="noopener">https://artitalk.js.org/</a></p></div>
 <h2 id="关于Leancloud"><a href="#关于Leancloud" class="headerlink" title="关于Leancloud"></a>关于Leancloud</h2><p>（这部分跟之前教程一样，如果你只是更新，直接跳到新建即可。<br>这里我们要求使用<a href="https://console.leancloud.app/login.html#/signup" target="_blank" rel="noopener">leancloud国际版</a>注册，因为国际版不需要绑定备案的域名<br>注册结束后首先找到账号设置，绑定邮箱和手机号。这一步是必须的，否则无法创建应用。邮箱和手机号都有临时的，所以也不难。<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/lc1.webp" data-fancybox="images" data-caption="ohuo" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/lc1.webp" class="img-shadow img-margin"></center></a></p>
 <p>绑定成功之后，点击创建应用，并将应用名字设置为<code>shuoshuo</code><br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/lc2.webp" data-fancybox="images" data-caption="ohuo" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/lc2.webp" class="img-shadow img-margin"></center></a><br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/lcc2.webp" data-fancybox="images" data-caption="ohuo" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/lcc2.webp" class="img-shadow img-margin"></center></a></p>
 <p>创建之后点击应用跳转到控制台<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/lc3.webp" data-fancybox="images" data-caption="ohuo" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/lc3.webp" class="img-shadow img-margin"></center></a></p>
@@ -470,71 +478,81 @@ comments: false (如果你的博客中使用了valine作为评论系统，这一
 <p>关于配置项的说明<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20200511095805.png" data-fancybox="images" data-caption="20200511095805" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200511095805.png" class="img-shadow img-margin"></center></a></p>
 <p>这样你再<code>hexo g</code>之后<strong>应该</strong>就可以了。对没错就是这样。多简单啊。</p>
 
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏<div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                </div>
+                <!-- .entry-content -->
+                <div class="single-reward">
+                  <div class="reward-open">赏<div class="reward-main">
+                      <ul class="reward-row">
+                        <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
+                        <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-        
+                <div style="text-align:center; width: 100%" class="social-share share-mobile"
+                  data-disabled="diandian, tencent"></div>
+                <footer class="post-footer">
+                  <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+                      target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                      知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+                  <div class="post-tags">
+                  </div>
+                  <div class="post-share">
+                    <div class="social-share sharehidden share-component"></div>
+                    <i class="iconfont show-share icon-forward"></i>
+                  </div>
+                </footer><!-- .entry-footer -->
+          </article>
+          <!-- #post-## -->
+          <div class="toc" style="background: none;"></div>
+          <section class="post-squares nextprev">
+
+            
+              
+                <div class="post-nepre half previous">
+                  
+                        <a href="/2020/05/14/COVID-19/" rel="prev">
+                          <div class="background">
+                            <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200514082037.webp"
+                              style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                              onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200514082037.webp">
+                          </div>
+                          <span class="label">
+                            Previous Post</span>
+                          <div class="info">
+                            <h3>
+                              COVID-19与我
+                            </h3>
+                            <hr>
+                          </div>
+                        </a>
+                    </div>
+                    
+                      
+                        
+                          <div class="post-nepre half next">
+                            
+                                  <a href="/2020/05/08/artiimg/" rel="next">
+                                    <div class="background">
+                                      <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp"
+                                        data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200508193114.webp"
+                                        style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                                        onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200508193114.webp">
+                                    </div>
+                                    <span class="label">
+                                      Next Post</span>
+                                    <div class="info">
+                                      <h3>
+                                        一步步带你通过Ajax+Github提供的api 实现前端剪切板图片上传
+                                      </h3>
+                                      <hr>
+                                    </div>
+                                  </a>
+                              </div>
+                              
+          </section>
           
-            <div class="post-nepre half previous">
-          
-            <a href="/2020/05/14/COVID-19/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200514082037.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200514082037.webp">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                COVID-19与我</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2020/05/08/artiimg/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200508193114.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200508193114.webp">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                一步步带你通过Ajax+Github提供的api 实现前端剪切板图片上传</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
-      
   
 <div id="vcomments"></div>
 <script>
@@ -556,23 +574,28 @@ comments: false (如果你的博客中使用了valine作为评论系统，这一
 </script>
 
 
-      
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image" alt="Uncle_drew" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="https://cndrew.cn/" itemprop="url" rel="author">Uncle_drew</a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i></p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
-</div>
+
+            <section class="author-profile">
+              <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image"
+                    alt="Uncle_drew" height="70" width="70"></a>
+                <div class="meta">
+                  <span class="title">Author</span>
+                  <h3 itemprop="name">
+                    <a href="https://cndrew.cn/" itemprop="url" rel="author">
+                      Uncle_drew
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <hr>
+              <p><i class="iconfont icon-write"></i>
+                
+              </p>
+            </section>
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    </div>
 
 
     </div>
@@ -583,7 +606,7 @@ comments: false (如果你的博客中使用了valine作为评论系统，这一
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 Uncle_drew<br>
+      &copy; 2022 Uncle_drew<br>
       powered_by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -635,7 +658,7 @@ comments: false (如果你的博客中使用了valine作为评论系统，这一
       <span class="badge-subject">PV</span><span class="badge-value bg-orange" id="busuanzi_value_site_pv" target="_blank" title="本站浏览量"></span>
     </div>
     <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.7k</span>
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.8k</span>
     </div>
     </div><!-- .site-info -->
 

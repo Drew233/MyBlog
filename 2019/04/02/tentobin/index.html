@@ -354,17 +354,19 @@
 
      
       <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"> -->
 <div class="pattern-center-blank"></div>
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20190804080500.webp);" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804080500.webp">
+
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20190804080500.webp);"
+      src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804080500.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      递归实现十进制与二进制的转换</h1>
+        递归实现十进制与二进制的转换
+      </h1>
       <p class="entry-census">
         <span>
           <a href="https://cndrew.cn/">
@@ -372,69 +374,75 @@
           </a>
         </span>
         <span>
-          <a href="https://cndrew.cn/">Uncle_drew</a>
+          <a href="https://cndrew.cn/">
+            Uncle_drew
+          </a>
         </span>
         <span class="bull">
-        ·</span>
-        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>2019-4-2<span class="bull">
-        ·</span>
-      <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读 &nbsp·&nbsp
-         <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：980</span> &nbsp·&nbsp
-           <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈3分钟</span></p>
+          ·</span>
+        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>
+        2019-4-2<span class="bull">
+            ·</span>
+          <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读
+          &nbsp·&nbsp
+          <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：980</span> &nbsp·&nbsp
+          <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈3分钟</span>
+      </p>
     </header>
   </div>
+  
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+          <div id="point"></div>
 
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <div id="point"></div>
-
-        <script>
-          function intervalTime(startTime,endTime){
-              var date1 = new Date(startTime);
-              var date2 = new Date(endTime);  
-              var date3 = date2.getTime() - date1.getTime(); 
-              var days = Math.floor(date3 / (24 * 3600 * 1000));
-              return days;
-          }
-          function format(Date){
-            var Y = Date.getFullYear();
-            var M = Date.getMonth() + 1;
+          <script>
+            function intervalTime(startTime, endTime) {
+              var date1 = new Date(startTime);
+              var date2 = new Date(endTime);
+              var date3 = date2.getTime() - date1.getTime();
+              var days = Math.floor(date3 / (24 * 3600 * 1000));
+              return days;
+            }
+            function format(Date) {
+              var Y = Date.getFullYear();
+              var M = Date.getMonth() + 1;
               M = M < 10 ? '0' + M : M;// 不够两位补充0
-            var D = Date.getDate();
+              var D = Date.getDate();
               D = D < 10 ? '0' + D : D;
-            var H = Date.getHours();
+              var H = Date.getHours();
               H = H < 10 ? '0' + H : H;
-            var Mi = Date.getMinutes();
+              var Mi = Date.getMinutes();
               Mi = Mi < 10 ? '0' + Mi : Mi;
-            var S = Date.getSeconds();
+              var S = Date.getSeconds();
               S = S < 10 ? '0' + S : S;
               return Y + '-' + M + '-' + D + ' ' + H + ':' + Mi + ':' + S;
-          }
-          var pdate = new Date("Tue Apr 02 2019 00:00:00 GMT+0800");
-          var update = new Date("Tue Oct 20 2020 22:57:58 GMT+0800");
-          var now = new Date();
-          now=format(now);
-          pdate=format(pdate);
-          update=format(update);
-          var days=intervalTime(pdate,now),udays=intervalTime(update,now);
-          var mid=parseInt(days,10);
-          var mi=parseInt("30",10);
-          // alert(mid+mi);
-          if(mid > mi){
-            document.getElementById("point").innerHTML="<div class=\"tip share\">请注意，本文编写于"+days+"天前，最后修改于"+udays+"天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
-            // alert(days);
-          }
-        </script>
+            }
+            var pdate = new Date("Tue Apr 02 2019 00:00:00 GMT+0800");
+            var update = new Date("Tue Oct 20 2020 22:57:58 GMT+0800");
+            var now = new Date();
+            now = format(now);
+            pdate = format(pdate);
+            update = format(update);
+            var days = intervalTime(pdate, now), udays = intervalTime(update, now);
+            var mid = parseInt(days, 10);
+            var mi = parseInt("30", 10);
+            // alert(mid+mi);
+            if (mid > mi) {
+              document.getElementById("point").innerHTML = "<div class=\"tip share\">请注意，本文编写于" + days + "天前，最后修改于" + udays + "天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
+              // alert(days);
+            }
+          </script>
 
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
+          <article id="post-1"
+            class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+            <div class="toc"></div>
+            <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+            
 
-        <div class="entry-content">
+                <div class="entry-content">
 
-          <p><a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6" target="_blank" rel="noopener">二进制</a>：二进制是计算技术中广泛采用的一种数制。二进制数据是用0和1两个数码来表示的数。它的基数为2，进位规则是“逢二进一”，借位规则是“借一当二”，由18世纪德国数理哲学大师莱布尼兹发现。当前的计算机系统使用的基本上是二进制系统，数据在计算机中主要是以补码的形式存储的。计算机中的二进制则是一个非常微小的开关，用“开”来表示1，“关”来表示0。<br>20世纪被称作第三次科技革命的重要标志之一的计算机的发明与应用，因为数字计算机只能识别和处理由‘0’.‘1’符号串组成的代码。其运算模式正是二进制。19世纪爱尔兰逻辑学家乔治布尔对逻辑命题的思考过程转化为对符号&quot;0&#39;&#39;.&#39;&#39;1&#39;&#39;的某种代数演算，二进制是逢2进位的进位制。0、1是基本算符。因为它只使用0、1两个数字符号，非常简单方便，易于用电子方式实现。<br>转换二进制我们用的都是余数短除法，就是要转换的数对二取余，然后除以二，直到这个数为0，再将余数倒序排列即可。不懂的话请看图示：<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804103413.webp" data-fancybox="images" data-caption="sakura" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804103413.webp" class="img-shadow img-margin"></center></a><br>这里的倒序输出，我们想到的就是用数组或者栈来实现，这也是等很大众化的一种方式。我要介绍的这种方法采用的是递归，其实本质都是一样的，且不分优劣，这样写只单纯为了加深对递归的理解！</p>
+                  <p><a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6" target="_blank" rel="noopener">二进制</a>：二进制是计算技术中广泛采用的一种数制。二进制数据是用0和1两个数码来表示的数。它的基数为2，进位规则是“逢二进一”，借位规则是“借一当二”，由18世纪德国数理哲学大师莱布尼兹发现。当前的计算机系统使用的基本上是二进制系统，数据在计算机中主要是以补码的形式存储的。计算机中的二进制则是一个非常微小的开关，用“开”来表示1，“关”来表示0。<br>20世纪被称作第三次科技革命的重要标志之一的计算机的发明与应用，因为数字计算机只能识别和处理由‘0’.‘1’符号串组成的代码。其运算模式正是二进制。19世纪爱尔兰逻辑学家乔治布尔对逻辑命题的思考过程转化为对符号&quot;0&#39;&#39;.&#39;&#39;1&#39;&#39;的某种代数演算，二进制是逢2进位的进位制。0、1是基本算符。因为它只使用0、1两个数字符号，非常简单方便，易于用电子方式实现。<br>转换二进制我们用的都是余数短除法，就是要转换的数对二取余，然后除以二，直到这个数为0，再将余数倒序排列即可。不懂的话请看图示：<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804103413.webp" data-fancybox="images" data-caption="sakura" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804103413.webp" class="img-shadow img-margin"></center></a><br>这里的倒序输出，我们想到的就是用数组或者栈来实现，这也是等很大众化的一种方式。我要介绍的这种方法采用的是递归，其实本质都是一样的，且不分优劣，这样写只单纯为了加深对递归的理解！</p>
 <pre><code>void Binary(int x)
 {
     if(x==0)
@@ -515,71 +523,81 @@ int main()
 }
 </code></pre><p>这样就实现了任意整数转化成二进制的功能啦</p>
 
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏<div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                </div>
+                <!-- .entry-content -->
+                <div class="single-reward">
+                  <div class="reward-open">赏<div class="reward-main">
+                      <ul class="reward-row">
+                        <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
+                        <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-        
+                <div style="text-align:center; width: 100%" class="social-share share-mobile"
+                  data-disabled="diandian, tencent"></div>
+                <footer class="post-footer">
+                  <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+                      target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                      知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+                  <div class="post-tags">
+                  </div>
+                  <div class="post-share">
+                    <div class="social-share sharehidden share-component"></div>
+                    <i class="iconfont show-share icon-forward"></i>
+                  </div>
+                </footer><!-- .entry-footer -->
+          </article>
+          <!-- #post-## -->
+          <div class="toc" style="background: none;"></div>
+          <section class="post-squares nextprev">
+
+            
+              
+                <div class="post-nepre half previous">
+                  
+                        <a href="/2019/04/03/pta stack/" rel="prev">
+                          <div class="background">
+                            <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804082001.webp"
+                              style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                              onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804082001.webp">
+                          </div>
+                          <span class="label">
+                            Previous Post</span>
+                          <div class="info">
+                            <h3>
+                              彩虹瓶
+                            </h3>
+                            <hr>
+                          </div>
+                        </a>
+                    </div>
+                    
+                      
+                        
+                          <div class="post-nepre half next">
+                            
+                                  <a href="/2019/04/01/Maxhw/" rel="next">
+                                    <div class="background">
+                                      <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp"
+                                        data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081610.webp"
+                                        style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                                        onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081610.webp">
+                                    </div>
+                                    <span class="label">
+                                      Next Post</span>
+                                    <div class="info">
+                                      <h3>
+                                        最长对称子串
+                                      </h3>
+                                      <hr>
+                                    </div>
+                                  </a>
+                              </div>
+                              
+          </section>
           
-            <div class="post-nepre half previous">
-          
-            <a href="/2019/04/03/pta stack/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804082001.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804082001.webp">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                彩虹瓶</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2019/04/01/Maxhw/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081610.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081610.webp">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                最长对称子串</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
-      
   
 <div id="vcomments"></div>
 <script>
@@ -601,23 +619,28 @@ int main()
 </script>
 
 
-      
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image" alt="Uncle_drew" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="https://cndrew.cn/" itemprop="url" rel="author">Uncle_drew</a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i></p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
-</div>
+
+            <section class="author-profile">
+              <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image"
+                    alt="Uncle_drew" height="70" width="70"></a>
+                <div class="meta">
+                  <span class="title">Author</span>
+                  <h3 itemprop="name">
+                    <a href="https://cndrew.cn/" itemprop="url" rel="author">
+                      Uncle_drew
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <hr>
+              <p><i class="iconfont icon-write"></i>
+                
+              </p>
+            </section>
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    </div>
 
 
     </div>
@@ -628,7 +651,7 @@ int main()
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 Uncle_drew<br>
+      &copy; 2022 Uncle_drew<br>
       powered_by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -680,7 +703,7 @@ int main()
       <span class="badge-subject">PV</span><span class="badge-value bg-orange" id="busuanzi_value_site_pv" target="_blank" title="本站浏览量"></span>
     </div>
     <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.7k</span>
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.8k</span>
     </div>
     </div><!-- .site-info -->
 

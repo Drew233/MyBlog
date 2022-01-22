@@ -354,17 +354,19 @@
 
      
       <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"> -->
 <div class="pattern-center-blank"></div>
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/HPU10-0.webp);" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/HPU10-0.webp">
+
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/HPU10-0.webp);"
+      src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/HPU10-0.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      The 10th Henan Polytechnic University Programming Contest</h1>
+        The 10th Henan Polytechnic University Programming Contest
+      </h1>
       <p class="entry-census">
         <span>
           <a href="https://cndrew.cn/">
@@ -372,69 +374,75 @@
           </a>
         </span>
         <span>
-          <a href="https://cndrew.cn/">Uncle_drew</a>
+          <a href="https://cndrew.cn/">
+            Uncle_drew
+          </a>
         </span>
         <span class="bull">
-        ·</span>
-        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>2019-12-23<span class="bull">
-        ·</span>
-      <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读 &nbsp·&nbsp
-         <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：1.5k</span> &nbsp·&nbsp
-           <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈5分钟</span></p>
+          ·</span>
+        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>
+        2019-12-23<span class="bull">
+            ·</span>
+          <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读
+          &nbsp·&nbsp
+          <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：1.5k</span> &nbsp·&nbsp
+          <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈5分钟</span>
+      </p>
     </header>
   </div>
+  
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+          <div id="point"></div>
 
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <div id="point"></div>
-
-        <script>
-          function intervalTime(startTime,endTime){
-              var date1 = new Date(startTime);
-              var date2 = new Date(endTime);  
-              var date3 = date2.getTime() - date1.getTime(); 
-              var days = Math.floor(date3 / (24 * 3600 * 1000));
-              return days;
-          }
-          function format(Date){
-            var Y = Date.getFullYear();
-            var M = Date.getMonth() + 1;
+          <script>
+            function intervalTime(startTime, endTime) {
+              var date1 = new Date(startTime);
+              var date2 = new Date(endTime);
+              var date3 = date2.getTime() - date1.getTime();
+              var days = Math.floor(date3 / (24 * 3600 * 1000));
+              return days;
+            }
+            function format(Date) {
+              var Y = Date.getFullYear();
+              var M = Date.getMonth() + 1;
               M = M < 10 ? '0' + M : M;// 不够两位补充0
-            var D = Date.getDate();
+              var D = Date.getDate();
               D = D < 10 ? '0' + D : D;
-            var H = Date.getHours();
+              var H = Date.getHours();
               H = H < 10 ? '0' + H : H;
-            var Mi = Date.getMinutes();
+              var Mi = Date.getMinutes();
               Mi = Mi < 10 ? '0' + Mi : Mi;
-            var S = Date.getSeconds();
+              var S = Date.getSeconds();
               S = S < 10 ? '0' + S : S;
               return Y + '-' + M + '-' + D + ' ' + H + ':' + Mi + ':' + S;
-          }
-          var pdate = new Date("Mon Dec 23 2019 07:12:00 GMT+0800");
-          var update = new Date("Tue Oct 20 2020 22:57:55 GMT+0800");
-          var now = new Date();
-          now=format(now);
-          pdate=format(pdate);
-          update=format(update);
-          var days=intervalTime(pdate,now),udays=intervalTime(update,now);
-          var mid=parseInt(days,10);
-          var mi=parseInt("30",10);
-          // alert(mid+mi);
-          if(mid > mi){
-            document.getElementById("point").innerHTML="<div class=\"tip share\">请注意，本文编写于"+days+"天前，最后修改于"+udays+"天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
-            // alert(days);
-          }
-        </script>
+            }
+            var pdate = new Date("Mon Dec 23 2019 07:12:00 GMT+0800");
+            var update = new Date("Tue Oct 20 2020 22:57:55 GMT+0800");
+            var now = new Date();
+            now = format(now);
+            pdate = format(pdate);
+            update = format(update);
+            var days = intervalTime(pdate, now), udays = intervalTime(update, now);
+            var mid = parseInt(days, 10);
+            var mi = parseInt("30", 10);
+            // alert(mid+mi);
+            if (mid > mi) {
+              document.getElementById("point").innerHTML = "<div class=\"tip share\">请注意，本文编写于" + days + "天前，最后修改于" + udays + "天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
+              // alert(days);
+            }
+          </script>
 
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
+          <article id="post-1"
+            class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+            <div class="toc"></div>
+            <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+            
 
-        <div class="entry-content">
+                <div class="entry-content">
 
-          <p>我六点闹钟起床，来到机房又打了几个板子，复习了一下暑期集训的那些题。八点二十的时候去了比赛的机房，配好环境之后等着学长来发密码条。发到最后了发现没我的，然后才发现我坐错机房了。。。但是环境都配好了，我就去我该去的机房拿上了我的密码条回来了。九点开始的比赛，因为种种原因，推到了九点十五。提前我已经把板子打好了。比赛开始前半分钟，题面压缩包的密码告诉了我们，我打开题面看了一眼A，就是一个输出。直接puts就行。毫无疑问，我A题0罚时拿了一血（全场最水最没有意义的一个一血。A过了之后，我就往下看题了，感觉B可以写，但是抱着先把题看完的心态，往下把题看完了。最后还是准备写B，B我怎么算复杂度都是1e7的复杂度，敲完之后，我看还没人交，以为自己又要有个一血，然后TLE？？？当时脑袋里就嗡嗡的。完了，T了。这时候榜单上有人过了G。我去看了一眼G，就是统计一个数中圈的个数。题面上有一句是这样的<code>8 has 2 cycles</code>，我看成了8和2都有两个圈（微笑。然后WA了两次，过了之后，名次已经排到后后面了，因为他们都没有罚时，而我已经有了3*20了。然后我看B有人过了，我还是很懵，1e7怎么可能会T？然后我忘了怎么改了一下，交了一发，这次是WA了。那时候心态是真的崩了。然后我又是关同步流，又是O2，O3优化的，又叫了一发，果然又T了。我想不能在一棵树上吊死，开了个新题F。F每啥，就是个大模拟，很快的敲出来之后我交了一发，WA了？？？我惊了。然后我又是各种读题，各种给自己试样例，改了一次交了次，WA，呵呵。榜单上有人过了D，我就先把F放了放去看D，看了一眼D，有思路但是不会写，就又回去改F了，F让我很不爽，关键是你就不知道哪错了。这时候，我在榜单上面排42名，银牌区都掉出来了亲。有一种鼠标一摔键盘一摔直接走的冲动。但是我忍住了。F又改了一发交了上去，又WA。我扭头就去写D，然后D过了。这时候一个<code>correct</code>的出现的感觉就像是久旱逢甘霖。我突然想起来B是不是在卡cin（关同步流也没用的那种），我又回去改B，弃用string，改用char数组。然后把strlen写在了外面，试了试没问题就交了。距离我交上去了一分钟多了，还在判，我想着，哦，又要T了。但是我怎么算都是1e7，这道题还是2s怎么会T呢？？？万念俱灰的时候，过了。它过了，鬼知道是在卡cin还是多计算的字符串长度，我笑了。B过了之后，我松了一口气。去上了个厕所，回来之后发现F也有人过了，我的一血也不会有了，但我还是准备写F，找不到bug我就重写，换着方式模拟，改了两次之后，WA了两次之后，过了。然后发现有人过了E，这道题我一开始就看了，感觉是个dp，但是过的人不少，我想着应该有简单的方法。然后就胡乱的敲了一个代码，样例过了之后就交了，然后就过了？？？（后来听题解的时候才知道，正解确实是dp，但是这个题选的摩斯密码，它很特殊，直接输出字符串长度/2就是答案）23333。现在我已经六题了。但是罚时爆炸。我看好几个7题的人都是过了J。然后我就去看J。这个题吧，卡了我将近三个小时。暴力我想不到怎么写，寄希望于是个有规律的数列，BM板子都抄了一边，O(n^3)的跑了前200项放到BM里面，WA。显然这不是有规律的数列，但是过的人那么多，我到最后都没过。最后听了题解才知道就是一道暴力的题，但是有优化。总的来说，题目还是很不错的，就是我太菜了。<br>最后抽奖环节也没抽到奖（六十几个人抽十个都抽不到的运气）。最终排名第10，没有滚出金牌区，好羡慕前面的人，奖金巨多，可是跟我并没有什么瓜西 。<br>期待了好久，担心了好久的校赛终于是安然的结束了。虽然名次不太理想，但是我知道我也就这个水平了，嘿嘿。接下来就该好好复习了呢，马上就是一大堆的考试。加油吧，少年。</p>
+                  <p>我六点闹钟起床，来到机房又打了几个板子，复习了一下暑期集训的那些题。八点二十的时候去了比赛的机房，配好环境之后等着学长来发密码条。发到最后了发现没我的，然后才发现我坐错机房了。。。但是环境都配好了，我就去我该去的机房拿上了我的密码条回来了。九点开始的比赛，因为种种原因，推到了九点十五。提前我已经把板子打好了。比赛开始前半分钟，题面压缩包的密码告诉了我们，我打开题面看了一眼A，就是一个输出。直接puts就行。毫无疑问，我A题0罚时拿了一血（全场最水最没有意义的一个一血。A过了之后，我就往下看题了，感觉B可以写，但是抱着先把题看完的心态，往下把题看完了。最后还是准备写B，B我怎么算复杂度都是1e7的复杂度，敲完之后，我看还没人交，以为自己又要有个一血，然后TLE？？？当时脑袋里就嗡嗡的。完了，T了。这时候榜单上有人过了G。我去看了一眼G，就是统计一个数中圈的个数。题面上有一句是这样的<code>8 has 2 cycles</code>，我看成了8和2都有两个圈（微笑。然后WA了两次，过了之后，名次已经排到后后面了，因为他们都没有罚时，而我已经有了3*20了。然后我看B有人过了，我还是很懵，1e7怎么可能会T？然后我忘了怎么改了一下，交了一发，这次是WA了。那时候心态是真的崩了。然后我又是关同步流，又是O2，O3优化的，又叫了一发，果然又T了。我想不能在一棵树上吊死，开了个新题F。F每啥，就是个大模拟，很快的敲出来之后我交了一发，WA了？？？我惊了。然后我又是各种读题，各种给自己试样例，改了一次交了次，WA，呵呵。榜单上有人过了D，我就先把F放了放去看D，看了一眼D，有思路但是不会写，就又回去改F了，F让我很不爽，关键是你就不知道哪错了。这时候，我在榜单上面排42名，银牌区都掉出来了亲。有一种鼠标一摔键盘一摔直接走的冲动。但是我忍住了。F又改了一发交了上去，又WA。我扭头就去写D，然后D过了。这时候一个<code>correct</code>的出现的感觉就像是久旱逢甘霖。我突然想起来B是不是在卡cin（关同步流也没用的那种），我又回去改B，弃用string，改用char数组。然后把strlen写在了外面，试了试没问题就交了。距离我交上去了一分钟多了，还在判，我想着，哦，又要T了。但是我怎么算都是1e7，这道题还是2s怎么会T呢？？？万念俱灰的时候，过了。它过了，鬼知道是在卡cin还是多计算的字符串长度，我笑了。B过了之后，我松了一口气。去上了个厕所，回来之后发现F也有人过了，我的一血也不会有了，但我还是准备写F，找不到bug我就重写，换着方式模拟，改了两次之后，WA了两次之后，过了。然后发现有人过了E，这道题我一开始就看了，感觉是个dp，但是过的人不少，我想着应该有简单的方法。然后就胡乱的敲了一个代码，样例过了之后就交了，然后就过了？？？（后来听题解的时候才知道，正解确实是dp，但是这个题选的摩斯密码，它很特殊，直接输出字符串长度/2就是答案）23333。现在我已经六题了。但是罚时爆炸。我看好几个7题的人都是过了J。然后我就去看J。这个题吧，卡了我将近三个小时。暴力我想不到怎么写，寄希望于是个有规律的数列，BM板子都抄了一边，O(n^3)的跑了前200项放到BM里面，WA。显然这不是有规律的数列，但是过的人那么多，我到最后都没过。最后听了题解才知道就是一道暴力的题，但是有优化。总的来说，题目还是很不错的，就是我太菜了。<br>最后抽奖环节也没抽到奖（六十几个人抽十个都抽不到的运气）。最终排名第10，没有滚出金牌区，好羡慕前面的人，奖金巨多，可是跟我并没有什么瓜西 。<br>期待了好久，担心了好久的校赛终于是安然的结束了。虽然名次不太理想，但是我知道我也就这个水平了，嘿嘿。接下来就该好好复习了呢，马上就是一大堆的考试。加油吧，少年。</p>
 <p>补一下J题吧。<br>Link: <a href="https://hpuoj.com/contest/32/problem/J/" target="_blank" rel="noopener">HPU&#39;s birthday</a><br>Problem solving:<br>因为1e5的二进制才不到32位，所以可以构建出来最后的那个字符串进行遍历。<br>边遍历边统计1出现的次数（x），每次遇见0的时候，就相当于在已经出现的1里面选两个，方案数就是x*(x-1)/2，按照这个规则遍历完，每次累加即可。<br>Code:</p>
 <pre><code class="lang-c++">#include &lt;bits/stdc++.h&gt;
 using namespace std;
@@ -467,71 +475,81 @@ int main()
 </code></pre>
 <p>最后放上我的domjudge首页吧<br><a href="https://cdn.jsdelivr.net/gh/drew233/cdn/HPU10-1.webp" data-fancybox="images" data-caption="domjudge" target="_blank" rel="noopener"><center><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/HPU10-1.webp" class="img-shadow img-margin"></center></a></p>
 
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏<div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                </div>
+                <!-- .entry-content -->
+                <div class="single-reward">
+                  <div class="reward-open">赏<div class="reward-main">
+                      <ul class="reward-row">
+                        <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
+                        <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-        
+                <div style="text-align:center; width: 100%" class="social-share share-mobile"
+                  data-disabled="diandian, tencent"></div>
+                <footer class="post-footer">
+                  <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+                      target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                      知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+                  <div class="post-tags">
+                  </div>
+                  <div class="post-share">
+                    <div class="social-share sharehidden share-component"></div>
+                    <i class="iconfont show-share icon-forward"></i>
+                  </div>
+                </footer><!-- .entry-footer -->
+          </article>
+          <!-- #post-## -->
+          <div class="toc" style="background: none;"></div>
+          <section class="post-squares nextprev">
+
+            
+              
+                <div class="post-nepre half previous">
+                  
+                        <a href="/2019/12/31/2019/" rel="prev">
+                          <div class="background">
+                            <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/2019.webp"
+                              style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                              onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/2019.webp">
+                          </div>
+                          <span class="label">
+                            Previous Post</span>
+                          <div class="info">
+                            <h3>
+                              Goodbye 2019
+                            </h3>
+                            <hr>
+                          </div>
+                        </a>
+                    </div>
+                    
+                      
+                        
+                          <div class="post-nepre half next">
+                            
+                                  <a href="/2019/12/21/nowcoder3282A/" rel="next">
+                                    <div class="background">
+                                      <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp"
+                                        data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/nowcoder3282A.webp"
+                                        style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                                        onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/nowcoder3282A.webp">
+                                    </div>
+                                    <span class="label">
+                                      Next Post</span>
+                                    <div class="info">
+                                      <h3>
+                                        牛客小白月赛20 A 斐波那契
+                                      </h3>
+                                      <hr>
+                                    </div>
+                                  </a>
+                              </div>
+                              
+          </section>
           
-            <div class="post-nepre half previous">
-          
-            <a href="/2019/12/31/2019/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/2019.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/2019.webp">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                Goodbye 2019</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2019/12/21/nowcoder3282A/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/nowcoder3282A.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/nowcoder3282A.webp">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                牛客小白月赛20 A 斐波那契</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
-      
   
 <div id="vcomments"></div>
 <script>
@@ -553,23 +571,28 @@ int main()
 </script>
 
 
-      
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image" alt="Uncle_drew" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="https://cndrew.cn/" itemprop="url" rel="author">Uncle_drew</a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i></p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
-</div>
+
+            <section class="author-profile">
+              <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image"
+                    alt="Uncle_drew" height="70" width="70"></a>
+                <div class="meta">
+                  <span class="title">Author</span>
+                  <h3 itemprop="name">
+                    <a href="https://cndrew.cn/" itemprop="url" rel="author">
+                      Uncle_drew
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <hr>
+              <p><i class="iconfont icon-write"></i>
+                
+              </p>
+            </section>
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    </div>
 
 
     </div>
@@ -580,7 +603,7 @@ int main()
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 Uncle_drew<br>
+      &copy; 2022 Uncle_drew<br>
       powered_by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -632,7 +655,7 @@ int main()
       <span class="badge-subject">PV</span><span class="badge-value bg-orange" id="busuanzi_value_site_pv" target="_blank" title="本站浏览量"></span>
     </div>
     <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.7k</span>
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.8k</span>
     </div>
     </div><!-- .site-info -->
 

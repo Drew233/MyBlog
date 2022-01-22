@@ -354,17 +354,19 @@
 
      
       <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css"> -->
 <div class="pattern-center-blank"></div>
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20190804090200.webp);" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804090200.webp">
+
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20190804090200.webp);"
+      src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804090200.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      ICPC-Invitational in Xi'an</h1>
+        ICPC-Invitational in Xi'an
+      </h1>
       <p class="entry-census">
         <span>
           <a href="https://cndrew.cn/">
@@ -372,135 +374,151 @@
           </a>
         </span>
         <span>
-          <a href="https://cndrew.cn/">Uncle_drew</a>
+          <a href="https://cndrew.cn/">
+            Uncle_drew
+          </a>
         </span>
         <span class="bull">
-        ·</span>
-        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>2019-5-22<span class="bull">
-        ·</span>
-      <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读 &nbsp·&nbsp
-         <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：1.6k</span> &nbsp·&nbsp
-           <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈5分钟</span></p>
+          ·</span>
+        <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>
+        2019-5-22<span class="bull">
+            ·</span>
+          <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读
+          &nbsp·&nbsp
+          <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：1.6k</span> &nbsp·&nbsp
+          <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈5分钟</span>
+      </p>
     </header>
   </div>
+  
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+          <div id="point"></div>
 
-<div id="content" class="site-content">
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <div id="point"></div>
-
-        <script>
-          function intervalTime(startTime,endTime){
-              var date1 = new Date(startTime);
-              var date2 = new Date(endTime);  
-              var date3 = date2.getTime() - date1.getTime(); 
-              var days = Math.floor(date3 / (24 * 3600 * 1000));
-              return days;
-          }
-          function format(Date){
-            var Y = Date.getFullYear();
-            var M = Date.getMonth() + 1;
+          <script>
+            function intervalTime(startTime, endTime) {
+              var date1 = new Date(startTime);
+              var date2 = new Date(endTime);
+              var date3 = date2.getTime() - date1.getTime();
+              var days = Math.floor(date3 / (24 * 3600 * 1000));
+              return days;
+            }
+            function format(Date) {
+              var Y = Date.getFullYear();
+              var M = Date.getMonth() + 1;
               M = M < 10 ? '0' + M : M;// 不够两位补充0
-            var D = Date.getDate();
+              var D = Date.getDate();
               D = D < 10 ? '0' + D : D;
-            var H = Date.getHours();
+              var H = Date.getHours();
               H = H < 10 ? '0' + H : H;
-            var Mi = Date.getMinutes();
+              var Mi = Date.getMinutes();
               Mi = Mi < 10 ? '0' + Mi : Mi;
-            var S = Date.getSeconds();
+              var S = Date.getSeconds();
               S = S < 10 ? '0' + S : S;
               return Y + '-' + M + '-' + D + ' ' + H + ':' + Mi + ':' + S;
-          }
-          var pdate = new Date("Wed May 22 2019 00:00:00 GMT+0800");
-          var update = new Date("Tue Oct 20 2020 22:57:55 GMT+0800");
-          var now = new Date();
-          now=format(now);
-          pdate=format(pdate);
-          update=format(update);
-          var days=intervalTime(pdate,now),udays=intervalTime(update,now);
-          var mid=parseInt(days,10);
-          var mi=parseInt("30",10);
-          // alert(mid+mi);
-          if(mid > mi){
-            document.getElementById("point").innerHTML="<div class=\"tip share\">请注意，本文编写于"+days+"天前，最后修改于"+udays+"天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
-            // alert(days);
-          }
-        </script>
+            }
+            var pdate = new Date("Wed May 22 2019 00:00:00 GMT+0800");
+            var update = new Date("Tue Oct 20 2020 22:57:55 GMT+0800");
+            var now = new Date();
+            now = format(now);
+            pdate = format(pdate);
+            update = format(update);
+            var days = intervalTime(pdate, now), udays = intervalTime(update, now);
+            var mid = parseInt(days, 10);
+            var mi = parseInt("30", 10);
+            // alert(mid+mi);
+            if (mid > mi) {
+              document.getElementById("point").innerHTML = "<div class=\"tip share\">请注意，本文编写于" + days + "天前，最后修改于" + udays + "天前，其中某些信息可能已经过时。<img src=\"https://cdn.jsdelivr.net/gh/drew233/cdn/kawayi.webp\"><\img> </div>";
+              // alert(days);
+            }
+          </script>
 
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
+          <article id="post-1"
+            class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+            <div class="toc"></div>
+            <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+            
 
-        <div class="entry-content">
+                <div class="entry-content">
 
-          <p>　　机缘巧合下，被选去参加了5.18-19的西安邀请赛。<br>　　等了好久，终于等到5.17的晚上。早早的到了火车站，我们需要从焦作先到郑州然后再转车去西安。去郑州还是很快的，但是我们也是第一次倒车，摸索着摸索着就会了呗。去西安的车是硬卧，还是第一次坐硬卧，空间也太狭小了。而且路上总会很颠簸，睡眠得质量还是不是很好的。到了西安，下来火车，映入眼帘得就是一个城墙，果然壮观。据老师跟我们说的，我们需要先坐公交去找他会和。找到他之后，我们去坐下一个公交。路上去吃了西安得“正宗”的胡辣汤，跟我们这里“正宗”得胡辣汤一点都不一样，那时我才反应过来，哦，原来这种“正宗”都是自己给自己加的！下一班公交要坐两个小时，这时已经略微有点倦意。路上还看到了秦岭，真的是连绵不绝。<br>　　到了学校下了车，进了学校，经过了一个耗资两亿的图书馆，看了看沿途学校的风景，挺美的。跟着老师一起去签到，领了参赛牌和衣服，衣服是橙色的，不是很喜欢，不过毕竟是白嫖的。等这些事都忙完已经十一点多了，下午两点多还得到这参加开幕式，我和两个队友就决定不去宾馆在这个学校转转。老师去宾馆处理事情，我们仨就在学校转悠起来。转完之后，坐在签到处等着开幕式，然后又一次机缘巧合下，没去开幕式。<br>　　三点多的时候，已经让进机房了(应该是因为是邀请赛，所以没有在体育馆进行，还是有点可惜的。里面的安排是两个位置坐三个人，而且地方特别小，幸亏我跟我的队友都比较瘦。电脑上也没有dev，有个clione还有codeblock什么的，还支持python。热身赛一共三道题，印象中开始没多久，旁边的那一队就AK了，那时候我们应该是才做出来一道题，而且下面的题毫无思路。一阵阵的伤心，不过最后随着队友的爆发和板子终于是过了两题了。最后一道题队友用python两行写了出来，可是发现题目中要求的是int32，而python中没有这个，导致样例都没过，然后两个队友就开始商量着模拟爆int32得处理，可是最后也莫得实现。距离五点半(比赛结束，只剩不到十分钟了，我说直接交一发吧，队友说肯定不会过毕竟样例都没过，我想的就是就算不过我们也要WA一发，证明我们来过啊。在我的怂恿下队友交了，还有一个队友说：这要是能过，我吃X，然后过了，过了。不知道是评测数据水了还是样例唬人，AK得感觉还是很好的。<br>　　做完题我们拿着饭票去食堂吃饭，但是我们一致决定不在学校吃了，就走着回宾馆，顺便在路上吃个饭，我们找到一家泡馍，就点了三碗，刚开始吃还是挺好吃的，但是吃了一会发现越来越油。可能没有找对地方吧。吃完饭回到宾馆就没事了，洗了个澡，玩会手机就睡了。<br>　　第二天早上起来，在宾馆吃了早餐，坐着大巴去学校，老师就回去了，我们三个到学校的时候还有点早，就站了一会，等到八点四十左右就进去机房了。总共13道题，第一道巨水，过了之后发现后面的题都不简单。然后一个队友开了L，发现可以找规律做，别的也没有思路，我们就开始一起找规律，找啊找啊，找了好久也没找到，这时候发现L和M过了好多，我们又看了M，一个队友说是什么图啊什么的，我就直接去看L了，最后还是队友强，找到规律过了L。周围的队都太强了，三四个气球，我们才两个。到了中午开始发吃的了，每个人发了一个那种“汉堡”还有一个面包一盒奶，本来以为这就结束了，最后又给每个人发了一袋零食，薯片啊，面包啊什么的。不过那个我和队友一点都没吃提了回来。过了一会我们有发现D好像可以写，然后队友写出来了D，一测样例发现第一个样例可以过，第二个样例过不去。我们一起手算了第二个样例，发现跟我们程序跑的一样跟样例也不一样，不敢交，可是我们也找不到更好的答案了，最后我们也知道了一定会打铁的事实，就直接破罐子破摔交了，然后又过了，过了。我枯了。<br>　　比赛结束之后我们坐着大巴到了一个地铁站，然后坐地铁到了钟楼，出来地铁去了回民街，刚进去就看到了一堆人，一堆，而且里面好多外国人，感觉自己就像村里人进城一样。说好给小伙伴带好吃的好玩的回去，结果转了好大一圈也没有发现什么好带的。最后我们每个人买了个肉夹馍，一个肉夹馍花了15块钱。还真是有点坑。这个时候我们已经准备回车站了，到了车站外面，发现不知道怎么去候车厅，问了下路，总算是进了候车厅。回去的车还是卧铺，到了郑州再转去焦作。<br>　　这就回来了，两天三夜的行程，真的很累，睡的也不安稳，还背着沉重的书包跑过来跑过去，不但身上累，心里面更累。还是打了个铁，有点失望的吧，不过我也不会气馁，下一年等我卷土重来！</p>
+                  <p>　　机缘巧合下，被选去参加了5.18-19的西安邀请赛。<br>　　等了好久，终于等到5.17的晚上。早早的到了火车站，我们需要从焦作先到郑州然后再转车去西安。去郑州还是很快的，但是我们也是第一次倒车，摸索着摸索着就会了呗。去西安的车是硬卧，还是第一次坐硬卧，空间也太狭小了。而且路上总会很颠簸，睡眠得质量还是不是很好的。到了西安，下来火车，映入眼帘得就是一个城墙，果然壮观。据老师跟我们说的，我们需要先坐公交去找他会和。找到他之后，我们去坐下一个公交。路上去吃了西安得“正宗”的胡辣汤，跟我们这里“正宗”得胡辣汤一点都不一样，那时我才反应过来，哦，原来这种“正宗”都是自己给自己加的！下一班公交要坐两个小时，这时已经略微有点倦意。路上还看到了秦岭，真的是连绵不绝。<br>　　到了学校下了车，进了学校，经过了一个耗资两亿的图书馆，看了看沿途学校的风景，挺美的。跟着老师一起去签到，领了参赛牌和衣服，衣服是橙色的，不是很喜欢，不过毕竟是白嫖的。等这些事都忙完已经十一点多了，下午两点多还得到这参加开幕式，我和两个队友就决定不去宾馆在这个学校转转。老师去宾馆处理事情，我们仨就在学校转悠起来。转完之后，坐在签到处等着开幕式，然后又一次机缘巧合下，没去开幕式。<br>　　三点多的时候，已经让进机房了(应该是因为是邀请赛，所以没有在体育馆进行，还是有点可惜的。里面的安排是两个位置坐三个人，而且地方特别小，幸亏我跟我的队友都比较瘦。电脑上也没有dev，有个clione还有codeblock什么的，还支持python。热身赛一共三道题，印象中开始没多久，旁边的那一队就AK了，那时候我们应该是才做出来一道题，而且下面的题毫无思路。一阵阵的伤心，不过最后随着队友的爆发和板子终于是过了两题了。最后一道题队友用python两行写了出来，可是发现题目中要求的是int32，而python中没有这个，导致样例都没过，然后两个队友就开始商量着模拟爆int32得处理，可是最后也莫得实现。距离五点半(比赛结束，只剩不到十分钟了，我说直接交一发吧，队友说肯定不会过毕竟样例都没过，我想的就是就算不过我们也要WA一发，证明我们来过啊。在我的怂恿下队友交了，还有一个队友说：这要是能过，我吃X，然后过了，过了。不知道是评测数据水了还是样例唬人，AK得感觉还是很好的。<br>　　做完题我们拿着饭票去食堂吃饭，但是我们一致决定不在学校吃了，就走着回宾馆，顺便在路上吃个饭，我们找到一家泡馍，就点了三碗，刚开始吃还是挺好吃的，但是吃了一会发现越来越油。可能没有找对地方吧。吃完饭回到宾馆就没事了，洗了个澡，玩会手机就睡了。<br>　　第二天早上起来，在宾馆吃了早餐，坐着大巴去学校，老师就回去了，我们三个到学校的时候还有点早，就站了一会，等到八点四十左右就进去机房了。总共13道题，第一道巨水，过了之后发现后面的题都不简单。然后一个队友开了L，发现可以找规律做，别的也没有思路，我们就开始一起找规律，找啊找啊，找了好久也没找到，这时候发现L和M过了好多，我们又看了M，一个队友说是什么图啊什么的，我就直接去看L了，最后还是队友强，找到规律过了L。周围的队都太强了，三四个气球，我们才两个。到了中午开始发吃的了，每个人发了一个那种“汉堡”还有一个面包一盒奶，本来以为这就结束了，最后又给每个人发了一袋零食，薯片啊，面包啊什么的。不过那个我和队友一点都没吃提了回来。过了一会我们有发现D好像可以写，然后队友写出来了D，一测样例发现第一个样例可以过，第二个样例过不去。我们一起手算了第二个样例，发现跟我们程序跑的一样跟样例也不一样，不敢交，可是我们也找不到更好的答案了，最后我们也知道了一定会打铁的事实，就直接破罐子破摔交了，然后又过了，过了。我枯了。<br>　　比赛结束之后我们坐着大巴到了一个地铁站，然后坐地铁到了钟楼，出来地铁去了回民街，刚进去就看到了一堆人，一堆，而且里面好多外国人，感觉自己就像村里人进城一样。说好给小伙伴带好吃的好玩的回去，结果转了好大一圈也没有发现什么好带的。最后我们每个人买了个肉夹馍，一个肉夹馍花了15块钱。还真是有点坑。这个时候我们已经准备回车站了，到了车站外面，发现不知道怎么去候车厅，问了下路，总算是进了候车厅。回去的车还是卧铺，到了郑州再转去焦作。<br>　　这就回来了，两天三夜的行程，真的很累，睡的也不安稳，还背着沉重的书包跑过来跑过去，不但身上累，心里面更累。还是打了个铁，有点失望的吧，不过我也不会气馁，下一年等我卷土重来！</p>
 
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏<div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                </div>
+                <!-- .entry-content -->
+                <div class="single-reward">
+                  <div class="reward-open">赏<div class="reward-main">
+                      <ul class="reward-row">
+                        <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/alipay.webp"></li>
+                        <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/drew233/cdn/wechat.webp"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-        
+                <div style="text-align:center; width: 100%" class="social-share share-mobile"
+                  data-disabled="diandian, tencent"></div>
+                <footer class="post-footer">
+                  <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+                      target="_blank" rel="nofollow"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                      知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+                  <div class="post-tags">
+                  </div>
+                  <div class="post-share">
+                    <div class="social-share sharehidden share-component"></div>
+                    <i class="iconfont show-share icon-forward"></i>
+                  </div>
+                </footer><!-- .entry-footer -->
+          </article>
+          <!-- #post-## -->
+          <div class="toc" style="background: none;"></div>
+          <section class="post-squares nextprev">
+
+            
+              
+                <div class="post-nepre half previous">
+                  
+                        <a href="/2019/05/23/poj-1321/" rel="prev">
+                          <div class="background">
+                            <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081457.webp"
+                              style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                              onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081457.webp">
+                          </div>
+                          <span class="label">
+                            Previous Post</span>
+                          <div class="info">
+                            <h3>
+                              棋盘问题
+                            </h3>
+                            <hr>
+                          </div>
+                        </a>
+                    </div>
+                    
+                      
+                        
+                          <div class="post-nepre half next">
+                            
+                                  <a href="/2019/05/21/LIS/" rel="next">
+                                    <div class="background">
+                                      <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp"
+                                        data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804085803.webp"
+                                        style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
+                                        onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804085803.webp">
+                                    </div>
+                                    <span class="label">
+                                      Next Post</span>
+                                    <div class="info">
+                                      <h3>
+                                        LIS
+                                      </h3>
+                                      <hr>
+                                    </div>
+                                  </a>
+                              </div>
+                              
+          </section>
           
-            <div class="post-nepre half previous">
-          
-            <a href="/2019/05/23/poj-1321/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081457.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081457.webp">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                棋盘问题</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2019/05/21/LIS/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804085803.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804085803.webp">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                LIS</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
-      
   
 <div id="vcomments"></div>
 <script>
@@ -522,23 +540,28 @@
 </script>
 
 
-      
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image" alt="Uncle_drew" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="https://cndrew.cn/" itemprop="url" rel="author">Uncle_drew</a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i></p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
-</div>
+
+            <section class="author-profile">
+              <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                <a href="https://cndrew.cn/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/drew233/imgcdn/1603205692256.png" itemprop="image"
+                    alt="Uncle_drew" height="70" width="70"></a>
+                <div class="meta">
+                  <span class="title">Author</span>
+                  <h3 itemprop="name">
+                    <a href="https://cndrew.cn/" itemprop="url" rel="author">
+                      Uncle_drew
+                    </a>
+                  </h3>
+                </div>
+              </div>
+              <hr>
+              <p><i class="iconfont icon-write"></i>
+                
+              </p>
+            </section>
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    </div>
 
 
     </div>
@@ -549,7 +572,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2020 Uncle_drew<br>
+      &copy; 2022 Uncle_drew<br>
       powered_by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -601,7 +624,7 @@
       <span class="badge-subject">PV</span><span class="badge-value bg-orange" id="busuanzi_value_site_pv" target="_blank" title="本站浏览量"></span>
     </div>
     <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.7k</span>
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet" target="_blank" title="全站字数">343.8k</span>
     </div>
     </div><!-- .site-info -->
 
