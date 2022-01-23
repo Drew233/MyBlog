@@ -563,27 +563,35 @@ int main()
                               
           </section>
           
-  
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart; 
-      document.getElementById("page_loading_time").innerHTML="It took me "+loadTime+"ms to meet you this time";
-      console.log('Page load time is '+ loadTime);  
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        avatar: 'monsterid',
-        appId: "pNiuQ1a1Kllv1bupuAAOYjl3-gzGzoHsz",
-        appKey: "0cJBUKqrJsFhMOrGAyxfL9VU",
-        path: window.location.pathname,
-        serverURL: "https://valine.cndrew.cn/",
-        placeholder: "若想及时收到回复消息，请在上方填入常用邮箱."
+
+  <!-- <div id="vcomments"></div> -->
+  <div id="tcomment"></div>
+  <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.15/dist/twikoo.all.min.js"></script>
+  <script>
+    window.onload = function () {
+      var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+      document.getElementById("page_loading_time").innerHTML = "It took me " + loadTime + "ms to meet you this time";
+      console.log('Page load time is ' + loadTime);
+      // var valine = new Valine();
+      // valine.init({
+      //   el: '#vcomments',
+      //   avatar: 'monsterid',
+      //   appId: "pNiuQ1a1Kllv1bupuAAOYjl3-gzGzoHsz",
+      //   appKey: "0cJBUKqrJsFhMOrGAyxfL9VU",
+      //   path: window.location.pathname,
+      //   serverURL: "https://valine.cndrew.cn/",
+      //   placeholder: "若想及时收到回复消息，请在上方填入常用邮箱."
+      // })
+      twikoo.init({
+        envId: 'https://twikoo-drew233.vercel.app/',
+        el: '#tcomment',
+        // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+        // path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+        // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/dev/src/js/utils/i18n/index.js
       })
-  }
-</script>
-
-
+    }
+  </script>
+  
 
             <section class="author-profile">
               <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
