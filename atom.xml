@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2022-02-28T16:35:30.478Z</updated>
+  <updated>2022-04-18T08:07:04.088Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>字节跳动一二三面凉经</title>
+    <link href="/2022/02/28/lj/"/>
+    <id>/2022/02/28/lj/</id>
+    <published>2022-02-28T15:36:00.000Z</published>
+    <updated>2022-04-18T08:07:04.088Z</updated>
+    
+    <content type="html"><![CDATA[<p>总的说，这次被捞到一直面试一直到挂，很感谢这个HR</p><h1 id="被捞-2022-3-28-15-48"><a href="#被捞-2022-3-28-15-48" class="headerlink" title="被捞 2022.3.28 15:48"></a>被捞 2022.3.28 15:48</h1><p>在我对春招心如死灰之后，去打球的路上的时候收到了字节HR的电话，说要捞我。很震惊，因为前段时间找我队友内推因为秋招有面挂记录简历都不怎么过的去。竟然还能被捞，以至于HR跟我说她是北京字节的，我连续让她说了好几次，真的很不好意思，不是你没说清楚，是我没想到（233）。<br>一面约在了4.2， 闭关深造，手机娱乐APP停用，每天就是八股和算法，期待一面。</p><h1 id="一面-2022-4-2-16-00-16-30-半个小时"><a href="#一面-2022-4-2-16-00-16-30-半个小时" class="headerlink" title="一面 2022.4.2 16:00-16:30 半个小时"></a>一面 2022.4.2 16:00-16:30 半个小时</h1><ol><li>自我介绍</li><li>讲讲项目</li><li>堆栈是什么</li><li>操作系统中的虚拟内存了解过吗</li><li>进程和线程的区别</li><li>锁，互斥锁以及自旋锁的区别以及适用场景</li><li>线程间的通信方式</li><li>进程与线程</li><li>你是怎么理解多线程安全的</li><li>输入一个url到展现页面的过程</li><li>http与https</li><li>http的报文格式了解过吗？</li><li>ssl的过程</li><li>tcp三次握手，两次可以吗？</li><li>tcp的拥塞重传</li><li>内存泄漏，什么情况下会出现</li><li>为什么有面向过程了还要有面向对象？</li><li>多态的实现</li><li>指针和引用的区别</li><li>手撕代码，求二叉树中两个节点的公共祖先（面试官还给我降低了难度，每个节点中还保存有指向父节点的指针）<br>力扣<a href="https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/</a></li><li>反问</li></ol><p>总共问答不到二十分钟，心里很慌，反问期间面试官又问了一下平常是怎么学习新技术的。<br>加上反问总共将近半个小时，这个时间让人很害怕啊。不过面试官很好，看起来就很温和，也非常有礼貌，后面闲聊了十分钟，总之面试的体验非常好！期待</p><p>2022.4.2 19:10 收到一面通过的消息，二面约到了4.7 11:00。好好准备！秋招就是二面挂了，这次起码挺到三面！</p><p>HR提示我：<br>2面会对于C++基础知识、算法只是考核的更深入一些，以往项目细节和对业务的理解也会考核；最好再学习一下iOS相关的知识作为延展。</p><h1 id="二面-2022-4-7-11-00-11-30-半个小时"><a href="#二面-2022-4-7-11-00-11-30-半个小时" class="headerlink" title="二面 2022.4.7 11:00-11:30 半个小时"></a>二面 2022.4.7 11:00-11:30 半个小时</h1><p>等结果中<br>面试官一进来就看到了强者发型，不苟言笑。不过后来给我的感觉还是很温和的~</p><ol><li>讲讲实习</li><li>讲讲项目</li><li>讲讲毕设</li><li>C与C++的区别</li><li>浮点数是如何存储的<br>浮点数存储的格式为[符号位，指数位，尾数位]<br>符号位用来表示是正数或者是负数，0表示正，1表示负<br>指数位用来存储小数点在数据中的位置，指数位越长，可以表示的数据范围就越大。在存储指数的时候，会加上127，使用的时候减去即可。这样可以不用把正负指数分情况处理。<br>尾数为用来存储小数点右边的部分，即小数部分，尾数为越长，可以表示的数据的精度就越大。<br>规定浮点数中小数点左边的数一定是1，所以不需要存储，使用的时候加上即可，这样可以省出一位空间，相应的尾数可以多存储一位，精度上升。</li><li>智能指针是如何实现的</li><li>delete具体过程</li><li>如果对一块内存调用两次delete会出现什么情况？怎么解决/避免？（不知道，但是提了个内存泄漏）</li><li>内存泄漏，什么时候会出现</li><li>如何实现一个读写锁（我真的不会，说了互斥锁与自旋锁）</li><li>使用udp如何保证可靠传输</li><li>TCP如何保证可靠传输的</li><li>static的作用</li><li>手撕代码：开平方</li><li>有没有其它offer，现在在哪？</li></ol><p>又是只有将近半个小时的面试过程，很慌啊。。。这时间太可怕了。<br>基本上没问什么问题，刚开始一直在聊实习的项目，可是我做的只有那一小部分，也答不上来啊呜呜呜<br>问了许多C++的，然后计网一点没问，操作系统也就问了个读写锁。<br>希望结果不错吧，不过这个时间真的太让人害怕了。。。</p><p>4.7 17:06 收到二面通过的消息，三面约到了4.18。</p><p>好家伙，直接十天的准备时间，冲！神经仍需紧绷，不能松懈。<br>PS：中午睡醒之后本来以为会收到消息，两点多睡醒没有消息心里很慌，什么也看不进去，不管是八股还是算法，都看不进去。就去打球了，打到五点多，刚打完一波，看了眼手机就看到了HR的消息，期待三面，希望三面顺利！</p><p>HR提示我：<br>3面会深入考核C语言基础知识，算法知识，会考察自己所做项目和对所负责业务的宏观理解，最好再提前了解一下我们国际直播-基础业务部（主要做直播、开播、看播业务，细节可以自己提前了解一下）；复盘一下2面，内容。</p><p>4.15 14:49 一直玩了好几天了，八股算法什么的看不进去，调整状态哇！</p><p>4.18 14:20 等待面试开始中，自己复盘一下一二面（PS：家这边出了一例无症状确诊病例，直接管控区只进不出了233）</p><h1 id="三面-2022-4-18-15-00-15-25"><a href="#三面-2022-4-18-15-00-15-25" class="headerlink" title="三面 2022.4.18 15:00 - 15:25"></a>三面 2022.4.18 15:00 - 15:25</h1><ol><li>自我介绍</li><li>你觉得自己有什么优点（我提了自我认为学习能力不错</li><li>你学过什么课程？（我自我介绍说过了又问了一遍</li><li>异或学过吗？</li><li>找出一个数组中出现一次的数，其它都出现两次</li><li>数组中有两个出现过一次的数，怎么找</li><li>设计模式学过吗？（只是了解过，但没有实现过</li><li>生产者消费者模式知道吗？</li><li>那你写一个生产者消费者模式吧<br>我说没写过不会，面试官直接怼了一句，你不是学习能力强吗？<br>然后开始了一两分钟的教育，说的确实对，是我太菜了</li><li>数据库学过没</li><li>怎么删除某一行某一列的数据（不会，我只会删除某一行的</li><li>多态你怎么理解的</li><li>写个多态吧</li><li>你都是怎么发起一个网络请求的</li><li>这样吧，你用C++写一个发起网络请求（不会</li><li>你还学过什么计算机一类的课？</li><li>学过linux吗？linux中进程怎么通信</li><li>我说我真实用过的是‘|’，还知道mkfifo用来创建命名管道。说了消息队列，共享内存，信号量，信号，socket</li><li>那你手写个socket的过程吧（不会，准备的时候对着demo写过，就记住了一个大概流程。。</li><li>你觉得自己还有什么优点（我笑笑说抗压能力不错</li><li>怎么体现出来的？</li><li>你为了面试做了什么准备</li><li>我这边没问题了，你还有什么想问的<br>问了面试官比较看重求职者哪些方面，直接回了个综合素质。<br>说实话，一开始就能看出来面试官没准备要我</li></ol><p>准备了大半个月的时间，换来了这样的结果。真的觉得憋屈，看了大半个牛客的三面面经，没见过让手写这么多的，是我太菜了吧。也不知道是做了什么坏事，会遇到这么狠的面试官。</p>]]></content>
+    
+    <summary type="html">
+    
+      还以为是自己转运了
+    
+    </summary>
+    
+      <category term="Life" scheme="/categories/Life/"/>
+    
+    
+      <category term="Life" scheme="/tags/Life/"/>
+    
+  </entry>
   
   <entry>
     <title>我在深圳这剩下的一个多月</title>
@@ -404,9 +426,9 @@
     
       <category term="Github" scheme="/tags/Github/"/>
     
-      <category term="javascript" scheme="/tags/javascript/"/>
-    
       <category term="web" scheme="/tags/web/"/>
+    
+      <category term="javascript" scheme="/tags/javascript/"/>
     
       <category term="ajax" scheme="/tags/ajax/"/>
     
@@ -430,9 +452,9 @@
       <category term="Tutorial" scheme="/categories/Tutorial/"/>
     
     
-      <category term="javascript" scheme="/tags/javascript/"/>
-    
       <category term="web" scheme="/tags/web/"/>
+    
+      <category term="javascript" scheme="/tags/javascript/"/>
     
       <category term="ajax" scheme="/tags/ajax/"/>
     
@@ -480,37 +502,9 @@
       <category term="Algorithm" scheme="/categories/Algorithm/"/>
     
     
-      <category term="atcoder" scheme="/tags/atcoder/"/>
-    
       <category term="思维" scheme="/tags/%E6%80%9D%E7%BB%B4/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Eight HDU - 1043</title>
-    <link href="/2020/05/03/hdu1043/"/>
-    <id>/2020/05/03/hdu1043/</id>
-    <published>2020-05-03T08:09:39.000Z</published>
-    <updated>2020-10-20T14:57:55.775Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Eight"><a href="#Eight" class="headerlink" title="Eight"></a>Eight</h1><div class="note link green"><p>Link: <a href="https://vjudge.net/problem/HDU-1043" target="_blank" rel="noopener">https://vjudge.net/problem/HDU-1043</a></p></div><h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><details green><summary> <p>点击查看题面</p> </summary>              <div class="content">              <p>The 15-puzzle has been around for over 100 years; even if you don&#39;t know it by that name, you&#39;ve seen it. It is constructed with 15 sliding tiles, each with a number from 1 to 15 on it, and all packed into a 4 by 4 frame with one tile missing. Let&#39;s call the missing tile &#39;x&#39;; the object of the puzzle is to arrange the tiles so that they are ordered as:</p><p> 1  2  3  4<br> 5  6  7  8<br> 9 10 11 12<br>13 14 15  x</p><p>where the only legal operation is to exchange &#39;x&#39; with one of the tiles with which it shares an edge. As an example, the following sequence of moves solves a slightly scrambled puzzle:</p><p> 1  2  3  4     1  2  3  4     1  2  3  4     1  2  3  4<br> 5  6  7  8     5  6  7  8     5  6  7  8     5  6  7  8<br> 9  x 10 12     9 10  x 12     9 10 11 12     9 10 11 12<br>13 14 11 15    13 14 11 15    13 14  x 15    13 14 15  x<br>            r-&gt;            d-&gt;            r-&gt;</p><p>The letters in the previous row indicate which neighbor of the &#39;x&#39; tile is swapped with the &#39;x&#39; tile at each step; legal values are &#39;r&#39;,&#39;l&#39;,&#39;u&#39; and &#39;d&#39;, for right, left, up, and down, respectively.</p><p>Not all puzzles can be solved; in 1870, a man named Sam Loyd was famous for distributing an unsolvable version of the puzzle, and<br>frustrating many people. In fact, all you have to do to make a regular puzzle into an unsolvable one is to swap two tiles (not counting the missing &#39;x&#39; tile, of course).</p><p>In this problem, you will write a program for solving the less well-known 8-puzzle, composed of tiles on a three by three<br>arrangement.</p><h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述:"></a>输入描述:</h3><p>You will receive, several descriptions of configuration of the 8 puzzle. One description is just a list of the tiles in their initial positions, with the rows listed from top to bottom, and the tiles listed from left to right within a row, where the tiles are represented by numbers 1 to 8, plus &#39;x&#39;. For example, this puzzle</p><p>1 2 3<br>x 4 6<br>7 5 8</p><p>is described by this list:</p><p>1 2 3 x 4 6 7 5 8</p><h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h3><p>You will print to standard output either the word ``unsolvable&#39;&#39;, if the puzzle has no solution, or a string consisting entirely of the letters &#39;r&#39;, &#39;l&#39;, &#39;u&#39; and &#39;d&#39; that describes a series of moves that produce a solution. The string should include no spaces and start at the beginning of the line. Do not print a blank line between cases.<br>示例1<br>输入<br>2  3  4  1  5  x  7  6  8<br>输出<br>ullddrurdllurdruldr</p>              </div>            </details><h2 id="Problem-solving"><a href="#Problem-solving" class="headerlink" title="Problem solving"></a>Problem solving</h2><p>这道题有许多种解法。这里我用的是康拓展开。<br>康拓展开，将一个全排列跟一个整数对应起来。也就是哈希的思想。我们把这个3*3的图当成一个全排列看待即可。<br>因为最后我们要到达的状态是恒定的（12345678x），所以我们可以通过逆向bfs打一个表得到每种状态到达这个状态的路径。省了时间也省了空间。把x当成0看，就是0-8的全排列了。（其实没看题解之前想到了hash，但是不知道怎么来回转换，康拓展开nb</p><h2 id="康拓展开的模板"><a href="#康拓展开的模板" class="headerlink" title="康拓展开的模板"></a>康拓展开的模板</h2><pre><code class="lang-c++">int cantor(int *a){//获得hash值   int x=0;   for(int i=0;i&lt;9;i++){      int mi=0;      for(int j=i+1;j&lt;9;j++){         if(a[j]&lt;a[i])  mi++;      }      x+=FAC[9-i-1]*mi;   }   return x+1;}void decantor(int x,int *a){//通过hash值倒推回全排列   vector&lt;int&gt; v;   for(int i=0;i&lt;9;i++) v.pb(i);   for(int i=0;i&lt;9;i++){      int r=x%FAC[9-i-1];      int t=x/FAC[9-i-1];      x=r;      sort(v.begin(),v.end());      a[i]=v[t];      v.erase(v.begin()+t);   }}</code></pre><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><pre><code class="lang-c++">#include&lt;iostream&gt;#include&lt;algorithm&gt;#include&lt;cstring&gt;#include&lt;string&gt;#include&lt;vector&gt;#include&lt;queue&gt;using namespace std;typedef long long ll;#define pb push_back#define mp make_pairconst int maxn = 4e5+10;const int mod = 1e9+7;const int INF = 0x3f3f3f3f;int miday[9],dt[4][2]= {1,0,-1,0,0,1,0,-1},result=46234,vis[maxn];string path[maxn];char op[5]=&quot;udlr&quot;;int FAC[] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880}; struct node{   string path;   int val,pos;};node now,net;int cantor(int *a){   int x=0;   for(int i=0;i&lt;9;i++){      int mi=0;      for(int j=i+1;j&lt;9;j++){         if(a[j]&lt;a[i])  mi++;      }      x+=FAC[9-i-1]*mi;   }   return x+1;}void decantor(int x,int *a){   vector&lt;int&gt; v;   for(int i=0;i&lt;9;i++) v.pb(i);   for(int i=0;i&lt;9;i++){      int r=x%FAC[9-i-1];      int t=x/FAC[9-i-1];      x=r;      sort(v.begin(),v.end());      a[i]=v[t];      v.erase(v.begin()+t);   }}void bfs(){   queue&lt;node&gt; q;   for(int i=0;i&lt;8;i++) miday[i]=i+1;   miday[8]=0;   now.pos=8;now.val=result;now.path=&quot;&quot;;vis[result]=1;path[result]=&quot;&quot;;   q.push(now);   while(!q.empty()){      now=q.front();      q.pop();      for(int i=0;i&lt;4;i++){         int dx=(now.pos)/3+dt[i][0];         int dy=(now.pos)%3+dt[i][1];         if(dx&lt;0||dy&lt;0||dx&gt;2||dy&gt;2) continue;         net=now;net.pos=dx*3+dy;         decantor(now.val-1,miday);         swap(miday[now.pos],miday[net.pos]);         net.val=cantor(miday);         if(!vis[net.val]){            vis[net.val]=1;            net.path=op[i]+net.path;            q.push(net);            path[net.val]=net.path;         }      }   }   return ;}int main() {   ios::sync_with_stdio(0);   #ifdef Uncle_drew   freopen(&quot;in.txt&quot;,&quot;r&quot;,stdin);   freopen(&quot;out.txt&quot;,&quot;w&quot;,stdout);   #else   #endif   bfs();   char x;   while(cin&gt;&gt;x){      if(x==&#39;x&#39;){         now.pos=0;         miday[0]=0;      }else{         miday[0]=x-&#39;0&#39;;      }      for(int i=1;i&lt;9;i++){         cin&gt;&gt;x;         if(x==&#39;x&#39;){            now.pos=i;            miday[i]=0;         }else{            miday[i]=x-&#39;0&#39;;         }      }      now.val=cantor(miday);      if(!vis[now.val]){         cout&lt;&lt;&quot;unsolvable\n&quot;;      }else{         cout&lt;&lt;path[now.val]&lt;&lt;endl;      }   }   return 0;}</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      逆向bfs+康拓展开+hash
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="/categories/Algorithm/"/>
-    
-    
-      <category term="HDU" scheme="/tags/HDU/"/>
-    
-      <category term="bfs" scheme="/tags/bfs/"/>
-    
-      <category term="hash" scheme="/tags/hash/"/>
-    
-      <category term="康拓展开" scheme="/tags/%E5%BA%B7%E6%8B%93%E5%B1%95%E5%BC%80/"/>
+      <category term="atcoder" scheme="/tags/atcoder/"/>
     
   </entry>
   

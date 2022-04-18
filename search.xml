@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>字节跳动一二三面凉经</title>
+      <link href="/2022/02/28/lj/"/>
+      <url>/2022/02/28/lj/</url>
+      
+        <content type="html"><![CDATA[<p>总的说，这次被捞到一直面试一直到挂，很感谢这个HR</p><h1 id="被捞-2022-3-28-15-48"><a href="#被捞-2022-3-28-15-48" class="headerlink" title="被捞 2022.3.28 15:48"></a>被捞 2022.3.28 15:48</h1><p>在我对春招心如死灰之后，去打球的路上的时候收到了字节HR的电话，说要捞我。很震惊，因为前段时间找我队友内推因为秋招有面挂记录简历都不怎么过的去。竟然还能被捞，以至于HR跟我说她是北京字节的，我连续让她说了好几次，真的很不好意思，不是你没说清楚，是我没想到（233）。<br>一面约在了4.2， 闭关深造，手机娱乐APP停用，每天就是八股和算法，期待一面。</p><h1 id="一面-2022-4-2-16-00-16-30-半个小时"><a href="#一面-2022-4-2-16-00-16-30-半个小时" class="headerlink" title="一面 2022.4.2 16:00-16:30 半个小时"></a>一面 2022.4.2 16:00-16:30 半个小时</h1><ol><li>自我介绍</li><li>讲讲项目</li><li>堆栈是什么</li><li>操作系统中的虚拟内存了解过吗</li><li>进程和线程的区别</li><li>锁，互斥锁以及自旋锁的区别以及适用场景</li><li>线程间的通信方式</li><li>进程与线程</li><li>你是怎么理解多线程安全的</li><li>输入一个url到展现页面的过程</li><li>http与https</li><li>http的报文格式了解过吗？</li><li>ssl的过程</li><li>tcp三次握手，两次可以吗？</li><li>tcp的拥塞重传</li><li>内存泄漏，什么情况下会出现</li><li>为什么有面向过程了还要有面向对象？</li><li>多态的实现</li><li>指针和引用的区别</li><li>手撕代码，求二叉树中两个节点的公共祖先（面试官还给我降低了难度，每个节点中还保存有指向父节点的指针）<br>力扣<a href="https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/</a></li><li>反问</li></ol><p>总共问答不到二十分钟，心里很慌，反问期间面试官又问了一下平常是怎么学习新技术的。<br>加上反问总共将近半个小时，这个时间让人很害怕啊。不过面试官很好，看起来就很温和，也非常有礼貌，后面闲聊了十分钟，总之面试的体验非常好！期待</p><p>2022.4.2 19:10 收到一面通过的消息，二面约到了4.7 11:00。好好准备！秋招就是二面挂了，这次起码挺到三面！</p><p>HR提示我：<br>2面会对于C++基础知识、算法只是考核的更深入一些，以往项目细节和对业务的理解也会考核；最好再学习一下iOS相关的知识作为延展。</p><h1 id="二面-2022-4-7-11-00-11-30-半个小时"><a href="#二面-2022-4-7-11-00-11-30-半个小时" class="headerlink" title="二面 2022.4.7 11:00-11:30 半个小时"></a>二面 2022.4.7 11:00-11:30 半个小时</h1><p>等结果中<br>面试官一进来就看到了强者发型，不苟言笑。不过后来给我的感觉还是很温和的~</p><ol><li>讲讲实习</li><li>讲讲项目</li><li>讲讲毕设</li><li>C与C++的区别</li><li>浮点数是如何存储的<br>浮点数存储的格式为[符号位，指数位，尾数位]<br>符号位用来表示是正数或者是负数，0表示正，1表示负<br>指数位用来存储小数点在数据中的位置，指数位越长，可以表示的数据范围就越大。在存储指数的时候，会加上127，使用的时候减去即可。这样可以不用把正负指数分情况处理。<br>尾数为用来存储小数点右边的部分，即小数部分，尾数为越长，可以表示的数据的精度就越大。<br>规定浮点数中小数点左边的数一定是1，所以不需要存储，使用的时候加上即可，这样可以省出一位空间，相应的尾数可以多存储一位，精度上升。</li><li>智能指针是如何实现的</li><li>delete具体过程</li><li>如果对一块内存调用两次delete会出现什么情况？怎么解决/避免？（不知道，但是提了个内存泄漏）</li><li>内存泄漏，什么时候会出现</li><li>如何实现一个读写锁（我真的不会，说了互斥锁与自旋锁）</li><li>使用udp如何保证可靠传输</li><li>TCP如何保证可靠传输的</li><li>static的作用</li><li>手撕代码：开平方</li><li>有没有其它offer，现在在哪？</li></ol><p>又是只有将近半个小时的面试过程，很慌啊。。。这时间太可怕了。<br>基本上没问什么问题，刚开始一直在聊实习的项目，可是我做的只有那一小部分，也答不上来啊呜呜呜<br>问了许多C++的，然后计网一点没问，操作系统也就问了个读写锁。<br>希望结果不错吧，不过这个时间真的太让人害怕了。。。</p><p>4.7 17:06 收到二面通过的消息，三面约到了4.18。</p><p>好家伙，直接十天的准备时间，冲！神经仍需紧绷，不能松懈。<br>PS：中午睡醒之后本来以为会收到消息，两点多睡醒没有消息心里很慌，什么也看不进去，不管是八股还是算法，都看不进去。就去打球了，打到五点多，刚打完一波，看了眼手机就看到了HR的消息，期待三面，希望三面顺利！</p><p>HR提示我：<br>3面会深入考核C语言基础知识，算法知识，会考察自己所做项目和对所负责业务的宏观理解，最好再提前了解一下我们国际直播-基础业务部（主要做直播、开播、看播业务，细节可以自己提前了解一下）；复盘一下2面，内容。</p><p>4.15 14:49 一直玩了好几天了，八股算法什么的看不进去，调整状态哇！</p><p>4.18 14:20 等待面试开始中，自己复盘一下一二面（PS：家这边出了一例无症状确诊病例，直接管控区只进不出了233）</p><h1 id="三面-2022-4-18-15-00-15-25"><a href="#三面-2022-4-18-15-00-15-25" class="headerlink" title="三面 2022.4.18 15:00 - 15:25"></a>三面 2022.4.18 15:00 - 15:25</h1><ol><li>自我介绍</li><li>你觉得自己有什么优点（我提了自我认为学习能力不错</li><li>你学过什么课程？（我自我介绍说过了又问了一遍</li><li>异或学过吗？</li><li>找出一个数组中出现一次的数，其它都出现两次</li><li>数组中有两个出现过一次的数，怎么找</li><li>设计模式学过吗？（只是了解过，但没有实现过</li><li>生产者消费者模式知道吗？</li><li>那你写一个生产者消费者模式吧<br>我说没写过不会，面试官直接怼了一句，你不是学习能力强吗？<br>然后开始了一两分钟的教育，说的确实对，是我太菜了</li><li>数据库学过没</li><li>怎么删除某一行某一列的数据（不会，我只会删除某一行的</li><li>多态你怎么理解的</li><li>写个多态吧</li><li>你都是怎么发起一个网络请求的</li><li>这样吧，你用C++写一个发起网络请求（不会</li><li>你还学过什么计算机一类的课？</li><li>学过linux吗？linux中进程怎么通信</li><li>我说我真实用过的是‘|’，还知道mkfifo用来创建命名管道。说了消息队列，共享内存，信号量，信号，socket</li><li>那你手写个socket的过程吧（不会，准备的时候对着demo写过，就记住了一个大概流程。。</li><li>你觉得自己还有什么优点（我笑笑说抗压能力不错</li><li>怎么体现出来的？</li><li>你为了面试做了什么准备</li><li>我这边没问题了，你还有什么想问的<br>问了面试官比较看重求职者哪些方面，直接回了个综合素质。<br>说实话，一开始就能看出来面试官没准备要我</li></ol><p>准备了大半个月的时间，换来了这样的结果。真的觉得憋屈，看了大半个牛客的三面面经，没见过让手写这么多的，是我太菜了吧。也不知道是做了什么坏事，会遇到这么狠的面试官。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Life </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Life </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我在深圳这剩下的一个多月</title>
       <link href="/2022/02/28/shenzhen2/"/>
       <url>/2022/02/28/shenzhen2/</url>
@@ -435,9 +460,9 @@
             
             <tag> Github </tag>
             
-            <tag> javascript </tag>
-            
             <tag> web </tag>
+            
+            <tag> javascript </tag>
             
             <tag> ajax </tag>
             
@@ -464,9 +489,9 @@
       
         <tags>
             
-            <tag> javascript </tag>
-            
             <tag> web </tag>
+            
+            <tag> javascript </tag>
             
             <tag> ajax </tag>
             
@@ -520,9 +545,9 @@
       
         <tags>
             
-            <tag> atcoder </tag>
-            
             <tag> 思维 </tag>
+            
+            <tag> atcoder </tag>
             
         </tags>
       
@@ -707,33 +732,6 @@
     
     
     <entry>
-      <title>Codeforces Round 632 (Div. 2) F. Kate and imperfection</title>
-      <link href="/2020/04/09/cf1333F/"/>
-      <url>/2020/04/09/cf1333F/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Kate-and-imperfection"><a href="#Kate-and-imperfection" class="headerlink" title="Kate and imperfection"></a>Kate and imperfection</h1><p>Link: <a href="https://codeforces.com/contest/1333/problem/F" target="_blank" rel="noopener">Kate and imperfection</a></p><h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Kate has a set S of n integers <script type="math/tex">\{1, \dots, n\}</script>.</p><p>She thinks that imperfection of a subset <script type="math/tex">M \subseteq S</script> is equal to the maximum of <script type="math/tex">gcd(a,b)</script> over all pairs <script type="math/tex">(a,b)</script> such that both a and b are in M and <script type="math/tex">a \neq b</script>.</p><p>Kate is a very neat girl and for each <script type="math/tex">k \in \{2, \dots, n\}</script> she wants to find a subset that has the smallest imperfection among all subsets in S of size k. There can be more than one subset with the smallest imperfection and the same size, but you don&#39;t need to worry about it. Kate wants to find all the subsets herself, but she needs your help to find the smallest possible imperfection for each size k, will name it <script type="math/tex">I_k</script>.</p><p>Please, help Kate to find <script type="math/tex">I_2</script>, <script type="math/tex">I_3</script>, ..., <script type="math/tex">I_n</script>.</p><p>Input<br>The first and only line in the input consists of only one integer n (<script type="math/tex">2\le n \le 5 \cdot 10^5</script>)  — the size of the given set S.</p><p>Output<br>Output contains only one line that includes n−1 integers: <script type="math/tex">I_2</script>, <script type="math/tex">I_3</script>, ..., <script type="math/tex">I_n</script>.</p><p>Examples</p><blockquote><p>input<br>2<br>output<br>1<br>input<br>3<br>output<br>1 1 </p></blockquote><p>Note<br>First sample: answer is 1, because <script type="math/tex">gcd(1, 2) = 1</script>.</p><p>Second sample: there are subsets of S with sizes 2,3 with imperfection equal to 1. For example, <script type="math/tex">\{2,3\}</script> and <script type="math/tex">\{1, 2, 3\}</script>.</p><h2 id="Problem-solving"><a href="#Problem-solving" class="headerlink" title="Problem solving"></a>Problem solving</h2><p>这道题的意思就是给你一个数n，让你分别找出<script type="math/tex">1-n</script>这个序列的长度为<script type="math/tex">2-n</script>的子序列，使得子序列中两两间的<script type="math/tex">gcd</script>的最大值最小。输出这个最小值。</p><p>如果有质数，我们一定是往里面放质数。当质数用完的时候，我们怎么办呢？<br>因为我们要求的是两两间的<script type="math/tex">gcd</script>的最大值的最小。所以我们可以先放与当前序列中质数的<script type="math/tex">gcd</script>为2的数，然后是3，直到放完<br>放完之后，放入的每一个数的每一个因子在序列中都存在了，所以此时能产生的最大的<script type="math/tex">gcd</script>就是它的最大的因子。</p><p>然后我们用一个数组维护某一个数的最大因子，然后排序输出即可。</p><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><pre><code class="lang-c++">#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 5e5+10;int p[maxn];int main(){    int n;    cin&gt;&gt;n;    for(int i=1;i&lt;=n;i++)   p[i]=1;    for(int i=2;i&lt;=n;i++){        for(int j=i+i;j&lt;=n;j+=i){            p[j]=i;        }    }    sort(p+1,p+1+n);    for(int i=2;i&lt;=n;i++)   cout&lt;&lt;p[i]&lt;&lt;&quot; &quot;;    return 0;}</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> c/c++ </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> c/c++ </tag>
-            
-            <tag> codeforces </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Codeforces Round 632 (Div. 2) D. Challenges in school №41</title>
       <link href="/2020/04/09/cf1333D/"/>
       <url>/2020/04/09/cf1333D/</url>
@@ -755,6 +753,33 @@
             <tag> codeforces </tag>
             
             <tag> 贪心 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Codeforces Round 632 (Div. 2) F. Kate and imperfection</title>
+      <link href="/2020/04/09/cf1333F/"/>
+      <url>/2020/04/09/cf1333F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Kate-and-imperfection"><a href="#Kate-and-imperfection" class="headerlink" title="Kate and imperfection"></a>Kate and imperfection</h1><p>Link: <a href="https://codeforces.com/contest/1333/problem/F" target="_blank" rel="noopener">Kate and imperfection</a></p><h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Kate has a set S of n integers <script type="math/tex">\{1, \dots, n\}</script>.</p><p>She thinks that imperfection of a subset <script type="math/tex">M \subseteq S</script> is equal to the maximum of <script type="math/tex">gcd(a,b)</script> over all pairs <script type="math/tex">(a,b)</script> such that both a and b are in M and <script type="math/tex">a \neq b</script>.</p><p>Kate is a very neat girl and for each <script type="math/tex">k \in \{2, \dots, n\}</script> she wants to find a subset that has the smallest imperfection among all subsets in S of size k. There can be more than one subset with the smallest imperfection and the same size, but you don&#39;t need to worry about it. Kate wants to find all the subsets herself, but she needs your help to find the smallest possible imperfection for each size k, will name it <script type="math/tex">I_k</script>.</p><p>Please, help Kate to find <script type="math/tex">I_2</script>, <script type="math/tex">I_3</script>, ..., <script type="math/tex">I_n</script>.</p><p>Input<br>The first and only line in the input consists of only one integer n (<script type="math/tex">2\le n \le 5 \cdot 10^5</script>)  — the size of the given set S.</p><p>Output<br>Output contains only one line that includes n−1 integers: <script type="math/tex">I_2</script>, <script type="math/tex">I_3</script>, ..., <script type="math/tex">I_n</script>.</p><p>Examples</p><blockquote><p>input<br>2<br>output<br>1<br>input<br>3<br>output<br>1 1 </p></blockquote><p>Note<br>First sample: answer is 1, because <script type="math/tex">gcd(1, 2) = 1</script>.</p><p>Second sample: there are subsets of S with sizes 2,3 with imperfection equal to 1. For example, <script type="math/tex">\{2,3\}</script> and <script type="math/tex">\{1, 2, 3\}</script>.</p><h2 id="Problem-solving"><a href="#Problem-solving" class="headerlink" title="Problem solving"></a>Problem solving</h2><p>这道题的意思就是给你一个数n，让你分别找出<script type="math/tex">1-n</script>这个序列的长度为<script type="math/tex">2-n</script>的子序列，使得子序列中两两间的<script type="math/tex">gcd</script>的最大值最小。输出这个最小值。</p><p>如果有质数，我们一定是往里面放质数。当质数用完的时候，我们怎么办呢？<br>因为我们要求的是两两间的<script type="math/tex">gcd</script>的最大值的最小。所以我们可以先放与当前序列中质数的<script type="math/tex">gcd</script>为2的数，然后是3，直到放完<br>放完之后，放入的每一个数的每一个因子在序列中都存在了，所以此时能产生的最大的<script type="math/tex">gcd</script>就是它的最大的因子。</p><p>然后我们用一个数组维护某一个数的最大因子，然后排序输出即可。</p><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><pre><code class="lang-c++">#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 5e5+10;int p[maxn];int main(){    int n;    cin&gt;&gt;n;    for(int i=1;i&lt;=n;i++)   p[i]=1;    for(int i=2;i&lt;=n;i++){        for(int j=i+i;j&lt;=n;j+=i){            p[j]=i;        }    }    sort(p+1,p+1+n);    for(int i=2;i&lt;=n;i++)   cout&lt;&lt;p[i]&lt;&lt;&quot; &quot;;    return 0;}</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> c/c++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c/c++ </tag>
+            
+            <tag> codeforces </tag>
             
         </tags>
       
@@ -3405,9 +3430,9 @@
             
             <tag> c/c++ </tag>
             
-            <tag> nowcoder </tag>
-            
             <tag> dfs </tag>
+            
+            <tag> nowcoder </tag>
             
         </tags>
       
@@ -4409,9 +4434,9 @@
             
             <tag> dp </tag>
             
-            <tag> 背包 </tag>
-            
             <tag> 矩阵快速幂 </tag>
+            
+            <tag> 背包 </tag>
             
             <tag> Thinking </tag>
             
@@ -7305,6 +7330,31 @@
     
     
     <entry>
+      <title>python学习笔记</title>
+      <link href="/2019/03/26/pythonStudy/"/>
+      <url>/2019/03/26/pythonStudy/</url>
+      
+        <content type="html"><![CDATA[<p>推荐大家去<a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener">https://www.liaoxuefeng.com/</a> 廖雪峰的官方网站学习，我是在本网站的基础上进行的学习以及自己的总结。</p><h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p>python中的运算符有些跟c是不同的。<br>python中有两种除法</p><pre><code class="lang-python">/      这个除法计算的结果是浮点数，即使两个整数恰好整除，结果也是浮点数；&gt;&gt;&gt; 10 / 33.3333333333333335&gt;&gt;&gt; 9 / 33.0//     这个是整除，不会四舍五入的&gt;&gt;&gt; 10 // 33&gt;&gt;&gt; 10 / 120.8333333333333334&gt;&gt;&gt; 10 // 120</code></pre><h2 id="各种函数"><a href="#各种函数" class="headerlink" title="各种函数"></a>各种函数</h2><p><code>ord()</code>获取字符的整数表示<br><code>chr()</code>把编码转换为对应的字符</p><pre><code class="lang-python">&gt;&gt;&gt; ord(&quot;崔&quot;)23828&gt;&gt;&gt; ord(&quot;美&quot;)32654&gt;&gt;&gt; ord(&quot;美&quot;)32654&gt;&gt;&gt; chr(23828)&#39;崔&#39;&gt;&gt;&gt; chr(32654)&#39;美&#39;&gt;&gt;&gt; chr(32654)&#39;美&#39;</code></pre><h2 id="python的格式化"><a href="#python的格式化" class="headerlink" title="python的格式化"></a>python的格式化</h2><p>python中的格式化方式跟c语言是一致的，用<code>%</code>实现。</p><pre><code>%d    整数%f    浮点数%s    字符串%x    十六进制整数&gt;&gt;&gt; &#39;Hello, %s&#39; % &#39;world&#39;&#39;Hello, world&#39;&gt;&gt;&gt; &#39;Hi, %s, you have $%d.&#39; % (&#39;Michael&#39;, 1000000)&#39;Hi, Michael, you have $1000000.&#39;# 具体看来跟c还是有些出入的，注意一下</code></pre><p>还有一种格式化输出的方式即format函数，这个我们上学期学过，我就不再总结了。</p><h2 id="列表——list"><a href="#列表——list" class="headerlink" title="列表——list"></a>列表——list</h2><p>list是一种有序的集合，可以随时添加和删除其中的元素。</p><pre><code class="lang-python">&gt;&gt;&gt; girllist = [&quot;崔美美&quot;,&quot;侍皮皮&quot;,&quot;顾六六&quot;]&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;]&gt;&gt;&gt; len(girllist)3&gt;&gt;&gt; girllist[0]&#39;崔美美&#39;&gt;&gt;&gt; girllist[-1]&#39;顾六六&#39;&gt;&gt;&gt; girllist[1]&#39;侍皮皮&#39;</code></pre><p>可以用append函数向列表尾部增加新元素</p><pre><code class="lang-python">&gt;&gt;&gt; girllist.append(&quot;jimila&quot;)&gt;&gt;&gt; girllist[3]&#39;jimila&#39;</code></pre><p>还可以用insert函数把元素插入到指定的位置</p><pre><code class="lang-python">&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;, &#39;jimila&#39;]&gt;&gt;&gt; girllist.insert(2,&quot;drew&quot;)&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;drew&#39;, &#39;顾六六&#39;, &#39;jimila&#39;]</code></pre><p>pop函数可以直接删除列表末尾的元素</p><pre><code class="lang-python">&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;drew&#39;, &#39;顾六六&#39;, &#39;jimila&#39;]&gt;&gt;&gt; girllist.pop()&#39;jimila&#39;&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;drew&#39;, &#39;顾六六&#39;]</code></pre><p>也可以用pop(i)删除指定位置的元素</p><pre><code class="lang-python">&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;drew&#39;, &#39;顾六六&#39;]&gt;&gt;&gt; girllist.pop(2)&#39;drew&#39;&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;]</code></pre><p>要把某个元素替换成别的元素，可以直接赋值给对应的索引位置</p><pre><code class="lang-python">&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;]&gt;&gt;&gt; girllist[0] = &quot;悦美美&quot;&gt;&gt;&gt; girllist[&#39;悦美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;]</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>学习笔记</title>
       <link href="/2019/03/26/study-note/"/>
       <url>/2019/03/26/study-note/</url>
@@ -7328,31 +7378,6 @@
             <tag> Tutorial </tag>
             
             <tag> Useful </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>python学习笔记</title>
-      <link href="/2019/03/26/pythonStudy/"/>
-      <url>/2019/03/26/pythonStudy/</url>
-      
-        <content type="html"><![CDATA[<p>推荐大家去<a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener">https://www.liaoxuefeng.com/</a> 廖雪峰的官方网站学习，我是在本网站的基础上进行的学习以及自己的总结。</p><h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p>python中的运算符有些跟c是不同的。<br>python中有两种除法</p><pre><code class="lang-python">/      这个除法计算的结果是浮点数，即使两个整数恰好整除，结果也是浮点数；&gt;&gt;&gt; 10 / 33.3333333333333335&gt;&gt;&gt; 9 / 33.0//     这个是整除，不会四舍五入的&gt;&gt;&gt; 10 // 33&gt;&gt;&gt; 10 / 120.8333333333333334&gt;&gt;&gt; 10 // 120</code></pre><h2 id="各种函数"><a href="#各种函数" class="headerlink" title="各种函数"></a>各种函数</h2><p><code>ord()</code>获取字符的整数表示<br><code>chr()</code>把编码转换为对应的字符</p><pre><code class="lang-python">&gt;&gt;&gt; ord(&quot;崔&quot;)23828&gt;&gt;&gt; ord(&quot;美&quot;)32654&gt;&gt;&gt; ord(&quot;美&quot;)32654&gt;&gt;&gt; chr(23828)&#39;崔&#39;&gt;&gt;&gt; chr(32654)&#39;美&#39;&gt;&gt;&gt; chr(32654)&#39;美&#39;</code></pre><h2 id="python的格式化"><a href="#python的格式化" class="headerlink" title="python的格式化"></a>python的格式化</h2><p>python中的格式化方式跟c语言是一致的，用<code>%</code>实现。</p><pre><code>%d    整数%f    浮点数%s    字符串%x    十六进制整数&gt;&gt;&gt; &#39;Hello, %s&#39; % &#39;world&#39;&#39;Hello, world&#39;&gt;&gt;&gt; &#39;Hi, %s, you have $%d.&#39; % (&#39;Michael&#39;, 1000000)&#39;Hi, Michael, you have $1000000.&#39;# 具体看来跟c还是有些出入的，注意一下</code></pre><p>还有一种格式化输出的方式即format函数，这个我们上学期学过，我就不再总结了。</p><h2 id="列表——list"><a href="#列表——list" class="headerlink" title="列表——list"></a>列表——list</h2><p>list是一种有序的集合，可以随时添加和删除其中的元素。</p><pre><code class="lang-python">&gt;&gt;&gt; girllist = [&quot;崔美美&quot;,&quot;侍皮皮&quot;,&quot;顾六六&quot;]&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;]&gt;&gt;&gt; len(girllist)3&gt;&gt;&gt; girllist[0]&#39;崔美美&#39;&gt;&gt;&gt; girllist[-1]&#39;顾六六&#39;&gt;&gt;&gt; girllist[1]&#39;侍皮皮&#39;</code></pre><p>可以用append函数向列表尾部增加新元素</p><pre><code class="lang-python">&gt;&gt;&gt; girllist.append(&quot;jimila&quot;)&gt;&gt;&gt; girllist[3]&#39;jimila&#39;</code></pre><p>还可以用insert函数把元素插入到指定的位置</p><pre><code class="lang-python">&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;, &#39;jimila&#39;]&gt;&gt;&gt; girllist.insert(2,&quot;drew&quot;)&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;drew&#39;, &#39;顾六六&#39;, &#39;jimila&#39;]</code></pre><p>pop函数可以直接删除列表末尾的元素</p><pre><code class="lang-python">&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;drew&#39;, &#39;顾六六&#39;, &#39;jimila&#39;]&gt;&gt;&gt; girllist.pop()&#39;jimila&#39;&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;drew&#39;, &#39;顾六六&#39;]</code></pre><p>也可以用pop(i)删除指定位置的元素</p><pre><code class="lang-python">&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;drew&#39;, &#39;顾六六&#39;]&gt;&gt;&gt; girllist.pop(2)&#39;drew&#39;&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;]</code></pre><p>要把某个元素替换成别的元素，可以直接赋值给对应的索引位置</p><pre><code class="lang-python">&gt;&gt;&gt; girllist[&#39;崔美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;]&gt;&gt;&gt; girllist[0] = &quot;悦美美&quot;&gt;&gt;&gt; girllist[&#39;悦美美&#39;, &#39;侍皮皮&#39;, &#39;顾六六&#39;]</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> Notes </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> python </tag>
             
         </tags>
       
