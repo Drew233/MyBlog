@@ -460,9 +460,9 @@
             
             <tag> Github </tag>
             
-            <tag> javascript </tag>
-            
             <tag> web </tag>
+            
+            <tag> javascript </tag>
             
             <tag> ajax </tag>
             
@@ -489,9 +489,9 @@
       
         <tags>
             
-            <tag> javascript </tag>
-            
             <tag> web </tag>
+            
+            <tag> javascript </tag>
             
             <tag> ajax </tag>
             
@@ -574,9 +574,9 @@
             
             <tag> HDU </tag>
             
-            <tag> hash </tag>
-            
             <tag> bfs </tag>
+            
+            <tag> hash </tag>
             
             <tag> 康拓展开 </tag>
             
@@ -732,6 +732,33 @@
     
     
     <entry>
+      <title>Codeforces Round 632 (Div. 2) F. Kate and imperfection</title>
+      <link href="/2020/04/09/cf1333F/"/>
+      <url>/2020/04/09/cf1333F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Kate-and-imperfection"><a href="#Kate-and-imperfection" class="headerlink" title="Kate and imperfection"></a>Kate and imperfection</h1><p>Link: <a href="https://codeforces.com/contest/1333/problem/F" target="_blank" rel="noopener">Kate and imperfection</a></p><h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Kate has a set S of n integers <script type="math/tex">\{1, \dots, n\}</script>.</p><p>She thinks that imperfection of a subset <script type="math/tex">M \subseteq S</script> is equal to the maximum of <script type="math/tex">gcd(a,b)</script> over all pairs <script type="math/tex">(a,b)</script> such that both a and b are in M and <script type="math/tex">a \neq b</script>.</p><p>Kate is a very neat girl and for each <script type="math/tex">k \in \{2, \dots, n\}</script> she wants to find a subset that has the smallest imperfection among all subsets in S of size k. There can be more than one subset with the smallest imperfection and the same size, but you don&#39;t need to worry about it. Kate wants to find all the subsets herself, but she needs your help to find the smallest possible imperfection for each size k, will name it <script type="math/tex">I_k</script>.</p><p>Please, help Kate to find <script type="math/tex">I_2</script>, <script type="math/tex">I_3</script>, ..., <script type="math/tex">I_n</script>.</p><p>Input<br>The first and only line in the input consists of only one integer n (<script type="math/tex">2\le n \le 5 \cdot 10^5</script>)  — the size of the given set S.</p><p>Output<br>Output contains only one line that includes n−1 integers: <script type="math/tex">I_2</script>, <script type="math/tex">I_3</script>, ..., <script type="math/tex">I_n</script>.</p><p>Examples</p><blockquote><p>input<br>2<br>output<br>1<br>input<br>3<br>output<br>1 1 </p></blockquote><p>Note<br>First sample: answer is 1, because <script type="math/tex">gcd(1, 2) = 1</script>.</p><p>Second sample: there are subsets of S with sizes 2,3 with imperfection equal to 1. For example, <script type="math/tex">\{2,3\}</script> and <script type="math/tex">\{1, 2, 3\}</script>.</p><h2 id="Problem-solving"><a href="#Problem-solving" class="headerlink" title="Problem solving"></a>Problem solving</h2><p>这道题的意思就是给你一个数n，让你分别找出<script type="math/tex">1-n</script>这个序列的长度为<script type="math/tex">2-n</script>的子序列，使得子序列中两两间的<script type="math/tex">gcd</script>的最大值最小。输出这个最小值。</p><p>如果有质数，我们一定是往里面放质数。当质数用完的时候，我们怎么办呢？<br>因为我们要求的是两两间的<script type="math/tex">gcd</script>的最大值的最小。所以我们可以先放与当前序列中质数的<script type="math/tex">gcd</script>为2的数，然后是3，直到放完<br>放完之后，放入的每一个数的每一个因子在序列中都存在了，所以此时能产生的最大的<script type="math/tex">gcd</script>就是它的最大的因子。</p><p>然后我们用一个数组维护某一个数的最大因子，然后排序输出即可。</p><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><pre><code class="lang-c++">#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 5e5+10;int p[maxn];int main(){    int n;    cin&gt;&gt;n;    for(int i=1;i&lt;=n;i++)   p[i]=1;    for(int i=2;i&lt;=n;i++){        for(int j=i+i;j&lt;=n;j+=i){            p[j]=i;        }    }    sort(p+1,p+1+n);    for(int i=2;i&lt;=n;i++)   cout&lt;&lt;p[i]&lt;&lt;&quot; &quot;;    return 0;}</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> c/c++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c/c++ </tag>
+            
+            <tag> codeforces </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Codeforces Round 632 (Div. 2) D. Challenges in school №41</title>
       <link href="/2020/04/09/cf1333D/"/>
       <url>/2020/04/09/cf1333D/</url>
@@ -753,33 +780,6 @@
             <tag> codeforces </tag>
             
             <tag> 贪心 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Codeforces Round 632 (Div. 2) F. Kate and imperfection</title>
-      <link href="/2020/04/09/cf1333F/"/>
-      <url>/2020/04/09/cf1333F/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Kate-and-imperfection"><a href="#Kate-and-imperfection" class="headerlink" title="Kate and imperfection"></a>Kate and imperfection</h1><p>Link: <a href="https://codeforces.com/contest/1333/problem/F" target="_blank" rel="noopener">Kate and imperfection</a></p><h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Kate has a set S of n integers <script type="math/tex">\{1, \dots, n\}</script>.</p><p>She thinks that imperfection of a subset <script type="math/tex">M \subseteq S</script> is equal to the maximum of <script type="math/tex">gcd(a,b)</script> over all pairs <script type="math/tex">(a,b)</script> such that both a and b are in M and <script type="math/tex">a \neq b</script>.</p><p>Kate is a very neat girl and for each <script type="math/tex">k \in \{2, \dots, n\}</script> she wants to find a subset that has the smallest imperfection among all subsets in S of size k. There can be more than one subset with the smallest imperfection and the same size, but you don&#39;t need to worry about it. Kate wants to find all the subsets herself, but she needs your help to find the smallest possible imperfection for each size k, will name it <script type="math/tex">I_k</script>.</p><p>Please, help Kate to find <script type="math/tex">I_2</script>, <script type="math/tex">I_3</script>, ..., <script type="math/tex">I_n</script>.</p><p>Input<br>The first and only line in the input consists of only one integer n (<script type="math/tex">2\le n \le 5 \cdot 10^5</script>)  — the size of the given set S.</p><p>Output<br>Output contains only one line that includes n−1 integers: <script type="math/tex">I_2</script>, <script type="math/tex">I_3</script>, ..., <script type="math/tex">I_n</script>.</p><p>Examples</p><blockquote><p>input<br>2<br>output<br>1<br>input<br>3<br>output<br>1 1 </p></blockquote><p>Note<br>First sample: answer is 1, because <script type="math/tex">gcd(1, 2) = 1</script>.</p><p>Second sample: there are subsets of S with sizes 2,3 with imperfection equal to 1. For example, <script type="math/tex">\{2,3\}</script> and <script type="math/tex">\{1, 2, 3\}</script>.</p><h2 id="Problem-solving"><a href="#Problem-solving" class="headerlink" title="Problem solving"></a>Problem solving</h2><p>这道题的意思就是给你一个数n，让你分别找出<script type="math/tex">1-n</script>这个序列的长度为<script type="math/tex">2-n</script>的子序列，使得子序列中两两间的<script type="math/tex">gcd</script>的最大值最小。输出这个最小值。</p><p>如果有质数，我们一定是往里面放质数。当质数用完的时候，我们怎么办呢？<br>因为我们要求的是两两间的<script type="math/tex">gcd</script>的最大值的最小。所以我们可以先放与当前序列中质数的<script type="math/tex">gcd</script>为2的数，然后是3，直到放完<br>放完之后，放入的每一个数的每一个因子在序列中都存在了，所以此时能产生的最大的<script type="math/tex">gcd</script>就是它的最大的因子。</p><p>然后我们用一个数组维护某一个数的最大因子，然后排序输出即可。</p><h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><pre><code class="lang-c++">#include&lt;bits/stdc++.h&gt;using namespace std;const int maxn = 5e5+10;int p[maxn];int main(){    int n;    cin&gt;&gt;n;    for(int i=1;i&lt;=n;i++)   p[i]=1;    for(int i=2;i&lt;=n;i++){        for(int j=i+i;j&lt;=n;j+=i){            p[j]=i;        }    }    sort(p+1,p+1+n);    for(int i=2;i&lt;=n;i++)   cout&lt;&lt;p[i]&lt;&lt;&quot; &quot;;    return 0;}</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> c/c++ </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> c/c++ </tag>
-            
-            <tag> codeforces </tag>
             
         </tags>
       
@@ -1684,11 +1684,11 @@
       
         <tags>
             
+            <tag> Life </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> c/c++ </tag>
-            
-            <tag> Life </tag>
             
         </tags>
       
@@ -1914,9 +1914,9 @@
       
         <tags>
             
-            <tag> Algorithm </tag>
-            
             <tag> Life </tag>
+            
+            <tag> Algorithm </tag>
             
         </tags>
       
@@ -2080,9 +2080,9 @@
       
         <tags>
             
-            <tag> c/c++ </tag>
-            
             <tag> Life </tag>
+            
+            <tag> c/c++ </tag>
             
         </tags>
       
@@ -2167,9 +2167,9 @@
       
         <tags>
             
-            <tag> Greedy </tag>
-            
             <tag> map </tag>
+            
+            <tag> Greedy </tag>
             
             <tag> Codeforces </tag>
             
@@ -3266,9 +3266,9 @@
             
             <tag> c/c++ </tag>
             
-            <tag> 二分 </tag>
-            
             <tag> codeforces </tag>
+            
+            <tag> 二分 </tag>
             
         </tags>
       
@@ -3741,11 +3741,11 @@
       
         <tags>
             
+            <tag> Life </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> c/c++ </tag>
-            
-            <tag> Life </tag>
             
         </tags>
       
@@ -4434,11 +4434,11 @@
             
             <tag> 矩阵快速幂 </tag>
             
-            <tag> Thinking </tag>
-            
             <tag> dp </tag>
             
             <tag> 背包 </tag>
+            
+            <tag> Thinking </tag>
             
             <tag> Greedy </tag>
             
@@ -4667,11 +4667,11 @@
             
             <tag> c/c++ </tag>
             
-            <tag> DP </tag>
-            
             <tag> HDU </tag>
             
             <tag> poj </tag>
+            
+            <tag> DP </tag>
             
         </tags>
       
@@ -4791,17 +4791,17 @@
             
             <tag> c/c++ </tag>
             
-            <tag> HDU </tag>
-            
-            <tag> poj </tag>
-            
             <tag> BFS </tag>
             
             <tag> DFS </tag>
             
+            <tag> HDU </tag>
+            
             <tag> Queue </tag>
             
             <tag> STL </tag>
+            
+            <tag> poj </tag>
             
             <tag> 邻接表 </tag>
             
@@ -4830,11 +4830,11 @@
             
             <tag> Algorithm </tag>
             
+            <tag> BFS </tag>
+            
             <tag> HDU </tag>
             
             <tag> poj </tag>
-            
-            <tag> BFS </tag>
             
             <tag> 51nod </tag>
             
@@ -4869,9 +4869,9 @@
             
             <tag> HDU </tag>
             
-            <tag> poj </tag>
-            
             <tag> STL </tag>
+            
+            <tag> poj </tag>
             
             <tag> CodeForces </tag>
             
@@ -4989,11 +4989,11 @@
       
         <tags>
             
+            <tag> Life </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> c/c++ </tag>
-            
-            <tag> Life </tag>
             
         </tags>
       
@@ -5055,19 +5055,19 @@
             
             <tag> HDU </tag>
             
-            <tag> poj </tag>
-            
             <tag> Queue </tag>
             
             <tag> STL </tag>
+            
+            <tag> poj </tag>
+            
+            <tag> UVA </tag>
             
             <tag> math </tag>
             
             <tag> Thinking </tag>
             
             <tag> CodeForces </tag>
-            
-            <tag> UVA </tag>
             
             <tag> Stack </tag>
             
@@ -5133,11 +5133,11 @@
       
         <tags>
             
+            <tag> Life </tag>
+            
             <tag> Algorithm </tag>
             
             <tag> c/c++ </tag>
-            
-            <tag> Life </tag>
             
         </tags>
       
@@ -5877,9 +5877,9 @@
       
         <tags>
             
-            <tag> nowcoder </tag>
-            
             <tag> BFS </tag>
+            
+            <tag> nowcoder </tag>
             
             <tag> Thinking </tag>
             
@@ -5991,9 +5991,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> poj </tag>
-            
             <tag> DFS </tag>
+            
+            <tag> poj </tag>
             
         </tags>
       
@@ -6130,9 +6130,9 @@
       
         <tags>
             
-            <tag> nowcoder </tag>
-            
             <tag> HDU </tag>
+            
+            <tag> nowcoder </tag>
             
             <tag> Thinking </tag>
             
@@ -6250,9 +6250,9 @@
             
             <tag> Algorithm </tag>
             
-            <tag> DP </tag>
-            
             <tag> DFS </tag>
+            
+            <tag> DP </tag>
             
             <tag> HPUOJ </tag>
             
@@ -6615,9 +6615,9 @@
             
             <tag> c/c++ </tag>
             
-            <tag> poj </tag>
-            
             <tag> STL </tag>
+            
+            <tag> poj </tag>
             
             <tag> Greedy </tag>
             
@@ -6812,9 +6812,9 @@
             
             <tag> c/c++ </tag>
             
-            <tag> Thinking </tag>
-            
             <tag> UVA </tag>
+            
+            <tag> Thinking </tag>
             
         </tags>
       
