@@ -10,7 +10,7 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta name="keywords" content="Uncle_drew,drew,欧文,acm,icpc,algorithm,算法,篮球,web,建站,chevereto,hexo">
   
-  <title itemprop="name">Even Substrings | Uncle_drew</title>
+  <title itemprop="name">字节跳动一二三面凉经 | Uncle_drew</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/drew233/cdn/favicon.ico">
   
@@ -360,12 +360,12 @@
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
 
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20190804091632.webp);"
-      src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804091632.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/1650270490881.jpeg);"
+      src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/1650270490881.jpeg">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-        Even Substrings
+        字节跳动一二三面凉经
       </h1>
       <p class="entry-census">
         <span>
@@ -381,12 +381,12 @@
         <span class="bull">
           ·</span>
         <i class="fa fa-calendar" aria-hidden="true">&nbsp&nbsp</i>
-        2019-3-26<span class="bull">
+        2022-4-18<span class="bull">
             ·</span>
           <i class="fa fa-eye" aria-hidden="true">&nbsp&nbsp</i>本文共<span id="busuanzi_value_page_pv"></span>次阅读
           &nbsp·&nbsp
-          <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：451</span> &nbsp·&nbsp
-          <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈2分钟</span>
+          <i class="fa fa-book" aria-hidden="true">&nbsp&nbsp</i><span class="post-count">字数统计：2k</span> &nbsp·&nbsp
+          <span class="post-count"><i class="fa fa-coffee" aria-hidden="true">&nbsp&nbsp</i>阅读时长≈6分钟</span>
       </p>
     </header>
   </div>
@@ -418,8 +418,8 @@
               S = S < 10 ? '0' + S : S;
               return Y + '-' + M + '-' + D + ' ' + H + ':' + Mi + ':' + S;
             }
-            var pdate = new Date("Tue Mar 26 2019 00:00:00 GMT+0800");
-            var update = new Date("Tue Oct 20 2020 22:57:55 GMT+0800");
+            var pdate = new Date("Mon Apr 18 2022 15:25:00 GMT+0800");
+            var update = new Date("Mon Apr 18 2022 16:28:43 GMT+0800");
             var now = new Date();
             now = format(now);
             pdate = format(pdate);
@@ -442,34 +442,85 @@
 
                 <div class="entry-content">
 
-                  <h3 id="1139-A-Even-Substrings"><a href="#1139-A-Even-Substrings" class="headerlink" title="1139 A Even Substrings"></a><center>1139 A Even Substrings</center></h3><p>cf传送门：<a href="https://codeforces.com/problemset/problem/1139/A" target="_blank" rel="noopener">Even Substrings</a><br>vj传送门：<a href="https://cn.vjudge.net/problem/CodeForces-1139A" target="_blank" rel="noopener">Even Substrings</a></p>
-<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>You are given a string s=s1s2…sn of length n, which only contains digits 1, 2, ..., 9.</p>
-<p>A substring s[l…r] of s is a string slsl+1sl+2…sr. A substring s[l…r] of s is called even if the number represented by it is even.</p>
-<p>Find the number of even substrings of s. Note, that even if some substrings are equal as strings, but have different l and r, they are counted as different substrings.</p>
-<p>Input<br>The first line contains an integer n (1≤n≤65000) — the length of the string s.</p>
-<p>The second line contains a string s of length n. The string s consists only of digits 1, 2, ..., 9.</p>
-<p>Output<br>Print the number of even substrings of s.</p>
-<p>Examples<br>Input<br>4<br>1234<br>Output<br>6<br>Input<br>4<br>2244<br>Output<br>10<br>Note<br>In the first example, the [l,r] pairs corresponding to even substrings are:</p>
-<p>s[1…2]<br>s[2…2]<br>s[1…4]<br>s[2…4]<br>s[3…4]<br>s[4…4]<br>In the second example, all 10 substrings of s are even substrings. Note, that while substrings s[1…1] and s[2…2] both define the substring &quot;2&quot;, they are still counted as different substrings.</p>
-<h4 id="题意分析"><a href="#题意分析" class="headerlink" title="题意分析"></a>题意分析</h4><p>这道题说实话直接看我真的看不懂，然后我借助翻译，，，发现还是看不懂。经过一段时间的挣扎和猜题意终于是看懂了这道题。<br>这道题就是输入一个字符串，让我们判断它的子串中<code>偶数</code>的个数，偶数指的就是把子串看成是整形的偶数。字符串的长度最大时65000，所以两重for是肯定不能用的，这时候就显现出了思维的重要性。如果这个字符串表示的数是偶数，那么它的最后一位一定是2或2的倍数。根据这一点就可以判断了。具体看代码</p>
-<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><pre><code>#include&lt;iostream&gt;
-#include&lt;string&gt;
-using namespace std;
-int main()
-{
-    int n;
-    string s,l;
-    cin&gt;&gt;n&gt;&gt;s;
-    int ans=0;
-    for(int i=0;i&lt;n;i++)
-    {
-        if((s[i]-&#39;0&#39;)%2==0)
-            ans+=(i+1);
-    }
-    cout&lt;&lt;ans&lt;&lt;endl;
-    return 0;
-}
-</code></pre>
+                  <p>总的说，这次被捞到一直面试一直到挂，很感谢这个HR</p>
+<h1 id="被捞-2022-3-28-15-48"><a href="#被捞-2022-3-28-15-48" class="headerlink" title="被捞 2022.3.28 15:48"></a>被捞 2022.3.28 15:48</h1><p>在我对春招心如死灰之后，去打球的路上的时候收到了字节HR的电话，说要捞我。很震惊，因为前段时间找我队友内推因为秋招有面挂记录简历都不怎么过的去。竟然还能被捞，以至于HR跟我说她是北京字节的，我连续让她说了好几次，真的很不好意思，不是你没说清楚，是我没想到（233）。<br>一面约在了4.2， 闭关深造，手机娱乐APP停用，每天就是八股和算法，期待一面。</p>
+<h1 id="一面-2022-4-2-16-00-16-30-半个小时"><a href="#一面-2022-4-2-16-00-16-30-半个小时" class="headerlink" title="一面 2022.4.2 16:00-16:30 半个小时"></a>一面 2022.4.2 16:00-16:30 半个小时</h1><ol>
+<li>自我介绍</li>
+<li>讲讲项目</li>
+<li>堆栈是什么</li>
+<li>操作系统中的虚拟内存了解过吗</li>
+<li>进程和线程的区别</li>
+<li>锁，互斥锁以及自旋锁的区别以及适用场景</li>
+<li>线程间的通信方式</li>
+<li>进程与线程</li>
+<li>你是怎么理解多线程安全的</li>
+<li>输入一个url到展现页面的过程</li>
+<li>http与https</li>
+<li>http的报文格式了解过吗？</li>
+<li>ssl的过程</li>
+<li>tcp三次握手，两次可以吗？</li>
+<li>tcp的拥塞重传</li>
+<li>内存泄漏，什么情况下会出现</li>
+<li>为什么有面向过程了还要有面向对象？</li>
+<li>多态的实现</li>
+<li>指针和引用的区别</li>
+<li>手撕代码，求二叉树中两个节点的公共祖先（面试官还给我降低了难度，每个节点中还保存有指向父节点的指针）<br>力扣<a href="https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/</a></li>
+<li>反问</li>
+</ol>
+<p>总共问答不到二十分钟，心里很慌，反问期间面试官又问了一下平常是怎么学习新技术的。<br>加上反问总共将近半个小时，这个时间让人很害怕啊。不过面试官很好，看起来就很温和，也非常有礼貌，后面闲聊了十分钟，总之面试的体验非常好！期待</p>
+<p>2022.4.2 19:10 收到一面通过的消息，二面约到了4.7 11:00。好好准备！秋招就是二面挂了，这次起码挺到三面！</p>
+<p>HR提示我：<br>2面会对于C++基础知识、算法只是考核的更深入一些，以往项目细节和对业务的理解也会考核；最好再学习一下iOS相关的知识作为延展。</p>
+<h1 id="二面-2022-4-7-11-00-11-30-半个小时"><a href="#二面-2022-4-7-11-00-11-30-半个小时" class="headerlink" title="二面 2022.4.7 11:00-11:30 半个小时"></a>二面 2022.4.7 11:00-11:30 半个小时</h1><p>等结果中<br>面试官一进来就看到了强者发型，不苟言笑。不过后来给我的感觉还是很温和的~</p>
+<ol>
+<li>讲讲实习</li>
+<li>讲讲项目</li>
+<li>讲讲毕设</li>
+<li>C与C++的区别</li>
+<li>浮点数是如何存储的<br>浮点数存储的格式为[符号位，指数位，尾数位]<br>符号位用来表示是正数或者是负数，0表示正，1表示负<br>指数位用来存储小数点在数据中的位置，指数位越长，可以表示的数据范围就越大。在存储指数的时候，会加上127，使用的时候减去即可。这样可以不用把正负指数分情况处理。<br>尾数为用来存储小数点右边的部分，即小数部分，尾数为越长，可以表示的数据的精度就越大。<br>规定浮点数中小数点左边的数一定是1，所以不需要存储，使用的时候加上即可，这样可以省出一位空间，相应的尾数可以多存储一位，精度上升。</li>
+<li>智能指针是如何实现的</li>
+<li>delete具体过程</li>
+<li>如果对一块内存调用两次delete会出现什么情况？怎么解决/避免？（不知道，但是提了个内存泄漏）</li>
+<li>内存泄漏，什么时候会出现</li>
+<li>如何实现一个读写锁（我真的不会，说了互斥锁与自旋锁）</li>
+<li>使用udp如何保证可靠传输</li>
+<li>TCP如何保证可靠传输的</li>
+<li>static的作用</li>
+<li>手撕代码：开平方</li>
+<li>有没有其它offer，现在在哪？</li>
+</ol>
+<p>又是只有将近半个小时的面试过程，很慌啊。。。这时间太可怕了。<br>基本上没问什么问题，刚开始一直在聊实习的项目，可是我做的只有那一小部分，也答不上来啊呜呜呜<br>问了许多C++的，然后计网一点没问，操作系统也就问了个读写锁。<br>希望结果不错吧，不过这个时间真的太让人害怕了。。。</p>
+<p>4.7 17:06 收到二面通过的消息，三面约到了4.18。</p>
+<p>好家伙，直接十天的准备时间，冲！神经仍需紧绷，不能松懈。<br>PS：中午睡醒之后本来以为会收到消息，两点多睡醒没有消息心里很慌，什么也看不进去，不管是八股还是算法，都看不进去。就去打球了，打到五点多，刚打完一波，看了眼手机就看到了HR的消息，期待三面，希望三面顺利！</p>
+<p>HR提示我：<br>3面会深入考核C语言基础知识，算法知识，会考察自己所做项目和对所负责业务的宏观理解，最好再提前了解一下我们国际直播-基础业务部（主要做直播、开播、看播业务，细节可以自己提前了解一下）；复盘一下2面，内容。</p>
+<p>4.15 14:49 一直玩了好几天了，八股算法什么的看不进去，调整状态哇！</p>
+<p>4.18 14:20 等待面试开始中，自己复盘一下一二面（PS：家这边出了一例无症状确诊病例，直接管控区只进不出了233）</p>
+<h1 id="三面-2022-4-18-15-00-15-25"><a href="#三面-2022-4-18-15-00-15-25" class="headerlink" title="三面 2022.4.18 15:00 - 15:25"></a>三面 2022.4.18 15:00 - 15:25</h1><ol>
+<li>自我介绍</li>
+<li>你觉得自己有什么优点（我提了自我认为学习能力不错</li>
+<li>你学过什么课程？（我自我介绍说过了又问了一遍</li>
+<li>异或学过吗？</li>
+<li>找出一个数组中出现一次的数，其它都出现两次</li>
+<li>数组中有两个出现过一次的数，怎么找</li>
+<li>设计模式学过吗？（只是了解过，但没有实现过</li>
+<li>生产者消费者模式知道吗？</li>
+<li>那你写一个生产者消费者模式吧<br>我说没写过不会，面试官直接怼了一句，你不是学习能力强吗？<br>然后开始了一两分钟的教育，说的确实对，是我太菜了</li>
+<li>数据库学过没</li>
+<li>怎么删除某一行某一列的数据（不会，我只会删除某一行的</li>
+<li>多态你怎么理解的</li>
+<li>写个多态吧</li>
+<li>你都是怎么发起一个网络请求的</li>
+<li>这样吧，你用C++写一个发起网络请求（不会</li>
+<li>你还学过什么计算机一类的课？</li>
+<li>学过linux吗？linux中进程怎么通信</li>
+<li>我说我真实用过的是‘|’，还知道mkfifo用来创建命名管道。说了消息队列，共享内存，信号量，信号，socket</li>
+<li>那你手写个socket的过程吧（不会，准备的时候对着demo写过，就记住了一个大概流程。。</li>
+<li>你觉得自己还有什么优点（我笑笑说抗压能力不错</li>
+<li>怎么体现出来的？</li>
+<li>你为了面试做了什么准备</li>
+<li>我这边没问题了，你还有什么想问的<br>问了面试官比较看重求职者哪些方面，直接回了个综合素质。<br>说实话，一开始就能看出来面试官没准备要我</li>
+</ol>
+<p>准备了大半个月的时间，换来了这样的结果。真的觉得憋屈，看了大半个牛客的三面面经，没见过让手写这么多的，是我太菜了吧。也不知道是做了什么坏事，会遇到这么狠的面试官。</p>
+
                 </div>
                 <!-- .entry-content -->
                 <div class="single-reward">
@@ -501,42 +552,22 @@ int main()
           <section class="post-squares nextprev">
 
             
-              
-                <div class="post-nepre half previous">
-                  
-                        <a href="/2019/03/27/movie-drew/" rel="prev">
-                          <div class="background">
-                            <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp" data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081834.webp"
-                              style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
-                              onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804081834.webp">
-                          </div>
-                          <span class="label">
-                            Previous Post</span>
-                          <div class="info">
-                            <h3>
-                              德鲁大叔观后感
-                            </h3>
-                            <hr>
-                          </div>
-                        </a>
-                    </div>
-                    
                       
                         
-                          <div class="post-nepre half next">
-                            
-                                  <a href="/2019/03/26/Game 23/" rel="next">
+                              <div class="post-nepre full next">
+                                
+                                  <a href="/2022/02/28/shenzhen2/" rel="next">
                                     <div class="background">
                                       <img class="lazyload" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200315221901.webp"
-                                        data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804090818.webp"
+                                        data-src="https://cdn.jsdelivr.net/gh/drew233/cdn/1646065710324.jpeg"
                                         style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"
-                                        onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/20190804090818.webp">
+                                        onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/drew233/cdn/1646065710324.jpeg">
                                     </div>
                                     <span class="label">
                                       Next Post</span>
                                     <div class="info">
                                       <h3>
-                                        Game 23
+                                        我在深圳这剩下的一个多月
                                       </h3>
                                       <hr>
                                     </div>
